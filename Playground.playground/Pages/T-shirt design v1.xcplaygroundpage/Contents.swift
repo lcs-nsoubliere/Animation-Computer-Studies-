@@ -37,8 +37,40 @@ let canvas = Canvas(width: preferredWidth, height: preferredHeight)
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
 
+// Draw all remaining shapes with no fill
+canvas.drawShapesWithFill = true
+canvas.fillColor = Color.black
+
+
+
+//drawing rectangle
+canvas.drawRectangle(at: Point(x: 490, y: 100), width: 100, height: 345)
+canvas.drawRectangle(at: Point(x: 365, y: 100), width: 100, height: 345)
+
+//drawing ellipse
+canvas.drawEllipse(at: Point(x: 55, y: 260), width: 90, height: 400)
+
+
+
+//drawing ellipse
+canvas.fillColor = Color.white
+canvas.drawEllipse(at: Point(x: 545, y: 270), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 545, y: 360), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 545, y: 180), width: 30, height: 30)
+
+//drawing ellipse
+canvas.drawEllipse(at: Point(x: 417, y: 270), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 417, y: 360), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 417, y: 180), width: 30, height: 30)
+
+//drawing ellipse
+canvas.drawEllipse(at: Point(x: 55, y: 270), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 55, y: 360), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 55, y: 180), width: 30, height: 30)
+
 //Changing line thicknest
 canvas.defaultLineWidth = 5
+
 
 // Draw the six lines to start design (bottom-left courner)
 canvas.drawAxes()
@@ -54,33 +86,6 @@ canvas.defaultLineWidth = 2
 canvas.drawLine(from: Point(x: 0, y: 3 * 60), to: Point(x: 600 , y: 3 * 60))
 canvas.defaultLineWidth = 1
 canvas.drawLine(from: Point(x: 0, y: 2 * 60), to: Point(x: 600 , y: 2 * 60))
-
-
-//drawing rectangle
-canvas.drawRectangle(at: Point(x: 490, y: 100), width: 100, height: 345)
-canvas.drawRectangle(at: Point(x: 365, y: 100), width: 100, height: 345)
-
-//drawing ellipse
-canvas.drawEllipse(at: Point(x: 55, y: 260), width: 90, height: 400)
-
-//draw all remaining shapes with no fill
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
