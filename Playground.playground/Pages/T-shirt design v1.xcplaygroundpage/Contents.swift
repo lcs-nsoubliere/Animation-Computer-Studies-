@@ -41,39 +41,55 @@ PlaygroundPage.current.liveView = canvas
 canvas.drawShapesWithFill = true
 canvas.fillColor = Color.black
 
-
-
 //drawing rectangle
-canvas.drawRectangle(at: Point(x: 490, y: 100), width: 100, height: 345)
-canvas.drawRectangle(at: Point(x: 365, y: 100), width: 100, height: 345)
+canvas.drawRectangle(at: Point(x: 495, y: 95), width: 100, height: 350)
+canvas.drawRectangle(at: Point(x: 365, y: 95), width: 100, height: 350)
 
 //drawing ellipse
-canvas.drawEllipse(at: Point(x: 55, y: 260), width: 90, height: 400)
+canvas.drawEllipse(at: Point(x: 55, y: 269), width: 100, height: 395)
+
+//drawing ellipse
+canvas.drawEllipse(at: Point(x: 100, y: 45), width: 80, height: 80)
+
+
+
+
+
 
 
 
 //drawing ellipse
 canvas.fillColor = Color.white
-canvas.drawEllipse(at: Point(x: 545, y: 270), width: 30, height: 30)
-canvas.drawEllipse(at: Point(x: 545, y: 360), width: 30, height: 30)
-canvas.drawEllipse(at: Point(x: 545, y: 180), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 545, y: 360), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 545, y: 419), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 545, y: 300), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 545, y: 240), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 545, y: 180), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 545, y: 120), width: 27, height: 27)
 
 //drawing ellipse
-canvas.drawEllipse(at: Point(x: 417, y: 270), width: 30, height: 30)
-canvas.drawEllipse(at: Point(x: 417, y: 360), width: 30, height: 30)
-canvas.drawEllipse(at: Point(x: 417, y: 180), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 417, y: 360), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 417, y: 419), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 417, y: 300), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 417, y: 240), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 417, y: 180), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 417, y: 120), width: 27, height: 27)
 
 //drawing ellipse
-canvas.drawEllipse(at: Point(x: 55, y: 270), width: 30, height: 30)
-canvas.drawEllipse(at: Point(x: 55, y: 360), width: 30, height: 30)
-canvas.drawEllipse(at: Point(x: 55, y: 180), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 55, y: 360), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 55, y: 419), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 55, y: 300), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 55, y: 240), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 55, y: 180), width: 27, height: 27)
+canvas.drawEllipse(at: Point(x: 55, y: 120), width: 27, height: 27)
+
+//drawing ellipse
+canvas.drawEllipse(at: Point(x: 100, y: 45), width: 70, height: 70)
+
 
 //Changing line thicknest
 canvas.defaultLineWidth = 5
 
-
-// Draw the six lines to start design (bottom-left courner)
-canvas.drawAxes()
 canvas.defaultLineWidth = 6
 canvas.drawLine(from: Point(x: 0, y: 7 * 60), to: Point(x: 600 , y: 7 * 60))
 canvas.defaultLineWidth = 5
@@ -102,8 +118,7 @@ canvas.drawLine(from: Point(x: 0, y: 2 * 60), to: Point(x: 600 , y: 2 * 60))
  */
 
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
-// Draw the six lines to start design (bottom-left courner)
-canvas.drawAxes()
+
 
 /*:
  ## Show the Assistant Editor
