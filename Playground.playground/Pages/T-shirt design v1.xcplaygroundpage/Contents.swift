@@ -38,8 +38,16 @@ let canvas = Canvas(width: preferredWidth, height: preferredHeight)
 PlaygroundPage.current.liveView = canvas
 
 // Draw all remaining shapes with no fill
+canvas.drawShapesWithFill = false
+canvas.drawRectangle(at: Point(x: 315, y: 51), width: 320, height:435)
+
+// Draw all remaining shapes with no fill
 canvas.drawShapesWithFill = true
 canvas.fillColor = Color.black
+
+//drawing ellipse
+canvas.drawEllipse(at: Point(x: 346, y: 461), width: 20, height: 20)
+canvas.drawEllipse(at: Point(x: 346, y: 80), width: 20, height: 20)
 
 //drawing rectangle
 canvas.drawRectangle(at: Point(x: 495, y: 95), width: 100, height: 350)
@@ -49,7 +57,7 @@ canvas.drawRectangle(at: Point(x: 365, y: 95), width: 100, height: 350)
 canvas.drawEllipse(at: Point(x: 55, y: 269), width: 100, height: 395)
 
 //drawing ellipse
-canvas.drawEllipse(at: Point(x: 100, y: 45), width: 80, height: 80)
+canvas.drawEllipse(at: Point(x: 150, y: 30), width: 80, height: 80)
 
 
 
@@ -84,8 +92,7 @@ canvas.drawEllipse(at: Point(x: 55, y: 180), width: 27, height: 27)
 canvas.drawEllipse(at: Point(x: 55, y: 120), width: 27, height: 27)
 
 //drawing ellipse
-canvas.drawEllipse(at: Point(x: 100, y: 45), width: 70, height: 70)
-
+canvas.drawEllipse(at: Point(x: 150, y: 30), width: 70, height: 70)
 
 //Changing line thicknest
 canvas.defaultLineWidth = 5
