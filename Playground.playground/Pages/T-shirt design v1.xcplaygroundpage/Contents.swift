@@ -33,7 +33,7 @@ import CanvasGraphics
 
 // Create canvas
 let canvas = Canvas(width: preferredWidth, height: preferredHeight)
-
+canvas.drawAxes(withScale: true)
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
 
