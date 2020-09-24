@@ -1,3 +1,8 @@
+//: [Previous](@previous)
+
+import Foundation
+
+var str = "Hello, playground"
 //: [Previous](@previous) / [Next](@next)
 //: # Blank canvas to copy
 //:
@@ -16,8 +21,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 300
-let preferredHeight = 600
+let preferredWidth = 500
+let preferredHeight = 500
 /*:
  ## Required code
  
@@ -42,47 +47,42 @@ PlaygroundPage.current.liveView = canvas
  You can remove the code on line 49 and begin writing your own code.
  
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
-
+ 
  */
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-
-//Changing line thicknest
-canvas.defaultLineWidth = 5
-
-canvas.drawLine(from: Point(x: 50, y: 10), to: Point(x: 100, y: 500))
-
-canvas.defaultBorderWidth = 5
+// draw the axes with a scale
+canvas.drawAxes(withScale: true, by: 50)
+canvas.defaultLineWidth = 6
+for y in stride(from: 0,
+                to: 500,
+                by: 50) {
     
-canvas.drawLine(from: Point(x: 50, y: 30), to: Point(x: 100, y: 600))
+    for x in stride(from: 0,
+                    to: 500,
+                    by: 50) {
+        
+        // Make a random number that will be 1 or 2
+        let decisionMaker = Int.random(in: 1...2)
+        
+        //Now draw a line one way or the other...
+        if decisionMaker == 1 { 
+            // Draw a /
+            canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y + 50))
+            
+        } else {
+            canvas.drawLine(from: Point(x: x, y: y + 50), to: Point(x: x + 50, y: y ))
+        }
+        
+        
+        
+        
+        
+    }
+    
+    
+}
 
-//drawingellipse
-canvas.drawEllipse(at: Point(x: 250, y: 300), width: 50, height: 100)
-
-//draw all remaining shapes with no fill
-canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth = 15
-
-// Drawing a custom polygon
-canvas.defaultLineWidth = 3
-
-
-
-
-for y in stride(from: 100, through: 550, by: 50)
-
-{canvas.drawLine(from: Point(x:100, y: y) to: Point(x:200, y: y + 50))}
-
-
-
-
-
-
-
-
-
-
-
+canvas.copyToClipboard()
 /*:
  ## Show the Assistant Editor
  Don't see any results?
@@ -90,7 +90,7 @@ for y in stride(from: 100, through: 550, by: 50)
  Remember to show the Assistant Editor (1), and then switch to Live View (2):
  
  ![timeline](timeline.png "Timeline")
-
+ 
  ## Use source control
  To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
  
@@ -98,3 +98,5 @@ for y in stride(from: 100, through: 550, by: 50)
  
  ![source_control](source-control.png "Source Control")
  */
+
+//: [Next](@next)
