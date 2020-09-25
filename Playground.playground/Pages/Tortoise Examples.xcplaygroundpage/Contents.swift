@@ -45,7 +45,7 @@ turtle.goToHome()
 turtle.penDown()
 for i in 1...4 {
     turtle.forward(steps: 100)
-    turtle.left(by: 90)
+    turtle.left(by: 360)
     turtle.currentHeading()
     turtle.currentPosition()
 }

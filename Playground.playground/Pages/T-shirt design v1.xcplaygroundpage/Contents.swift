@@ -41,7 +41,7 @@ PlaygroundPage.current.liveView = canvas
 canvas.drawShapesWithFill = false
 canvas.drawRectangle(at: Point(x: 320, y: 51), width: 320, height:435)
 
-// Draw all remaining shapes with no fill
+// Draw all remaining shapes with  fill
 canvas.drawShapesWithFill = true
 canvas.fillColor = Color.black
 
