@@ -21,8 +21,8 @@ var str = "Hello, playground"
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 500
-let preferredHeight = 500
+let preferredWidth = 400
+let preferredHeight = 600
 /*:
  ## Required code
  
@@ -49,12 +49,48 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
-//Face
-// Draw all remaining shapes with no fill
-canvas.drawShapesWithFill = false
-canvas.drawEllipse(at: Point(x: 250, y: 250), width: 270, height: 400)
+// draw the axes with a scale
+canvas.drawAxes(withScale: true, by: 50)
+
+// Draw all remaining shapes with  fill
+//black rectangle
+canvas.drawShapesWithFill = true
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height:400)
 
 
+
+//green rectangle
+let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
+canvas.fillColor = limeGreen
+canvas.drawRectangle(at: Point(x: 0, y: 400), width: 400, height:200)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// draw the axes with a scale
+canvas.drawAxes(withScale: true, by: 50)
 /*:
  ## Show the Assistant Editor
  Don't see any results?
