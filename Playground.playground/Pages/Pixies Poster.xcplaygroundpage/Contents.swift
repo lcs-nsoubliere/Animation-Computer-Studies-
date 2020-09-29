@@ -59,6 +59,7 @@ canvas.drawAxes(withScale: true, by: 50)
 // Draw all remaining shapes with  fill
 //black rectangle
 canvas.drawShapesWithFill = true
+canvas.drawShapesWithBorders = false
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height:400)
 
 
@@ -81,8 +82,8 @@ for y in stride(from: 0,
         canvas.fillColor = limeGreen
 
         canvas.drawEllipse(at: Point(x: x + 0, y: y + 0),
-                           width: 50,
-                             height:50)
+                           width: 45,
+                             height:45)
   
     }
 
@@ -90,26 +91,20 @@ for y in stride(from: 0,
 }
 
 //green rectangle
-
 canvas.fillColor = limeGreen
 canvas.drawRectangle(at: Point(x: 0, y: 400), width: 400, height:200)
 
+//Text
 
+canvas.drawText(message: "pixies", at: Point(x: 25, y: 415), size: 65, kerning: 4.20)
 
+canvas.drawText(message: "saturday", at: Point(x: 25, y: 545), size: 15, kerning: 2)
+canvas.drawText(message: "december 13th 1989", at: Point(x: 25, y: 525), size: 15, kerning: 2)
+canvas.drawText(message: "9 pm over 21", at: Point(x: 25, y: 505), size: 15, kerning: 2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+canvas.drawText(message: "at the rat", at: Point(x: 230, y: 545), size: 15, kerning: 2)
+canvas.drawText(message: "528 commonwealth", at: Point(x: 230, y: 525), size: 15, kerning: 2)
+canvas.drawText(message: "boston,bass", at: Point(x: 230, y: 505), size: 15, kerning: 2)
 
 
 
