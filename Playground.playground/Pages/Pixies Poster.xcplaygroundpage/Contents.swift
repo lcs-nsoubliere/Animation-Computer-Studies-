@@ -49,6 +49,10 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+
+canvas.defaultBorderWidth = 0
+
+
 // draw the axes with a scale
 canvas.drawAxes(withScale: true, by: 50)
 
@@ -59,15 +63,36 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height:400)
 
 
 
-//green rectangle
+// draw a line of circles
 let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 canvas.fillColor = limeGreen
+for y in stride(from: 0,
+                to: 450,
+                by: 50) {
+    
+    for x in stride(from: 0,
+                   to: 450,
+                by: 50) {
+       
+        
+        //code in this block is repeated 10 times
+        x
+        //draw circle
+        canvas.fillColor = limeGreen
+
+        canvas.drawEllipse(at: Point(x: x + 0, y: y + 0),
+                           width: 50,
+                             height:50)
+  
+    }
+
+    
+}
+
+//green rectangle
+
+canvas.fillColor = limeGreen
 canvas.drawRectangle(at: Point(x: 0, y: 400), width: 400, height:200)
-
-
-
-
-
 
 
 
