@@ -107,6 +107,47 @@ canvas.drawText(message: "528 commonwealth", at: Point(x: 230, y: 525), size: 15
 canvas.drawText(message: "boston,bass", at: Point(x: 230, y: 505), size: 15, kerning: 2)
 
 
+//White Circles
+canvas.fillColor = Color.white
+canvas.drawEllipse(at: Point(x: 50, y: 50), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 100, y: 50), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 150, y: 50), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 200, y: 50), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 250, y: 50), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 300, y: 50), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 350, y: 50), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 50, y: 100), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 100, y: 100), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 150, y: 100), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 200, y: 100), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 250, y: 100), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 200, y: 100), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 250, y: 100), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 300, y: 100), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 50, y: 150), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 100, y: 150), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 150, y: 150), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 200, y: 150), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 250, y: 150), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 50, y: 200), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 100, y: 200), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 150, y: 200), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 50, y: 250), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 100, y: 250), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 150, y: 250), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 50, y: 300), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 100, y: 300), width: 45, height: 45)
+canvas.drawEllipse(at: Point(x: 50, y: 350), width: 45, height: 45)
+
+
+
+
+
+
+
+
+
 
 
 // draw the axes with a scale
