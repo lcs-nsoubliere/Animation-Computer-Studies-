@@ -49,6 +49,10 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+// draw the axes with a scale
+canvas.drawAxes(withScale: true, by: 50)
+
+
 
 canvas.defaultBorderWidth = 0
 
@@ -94,7 +98,7 @@ for y in stride(from: 0,
 canvas.fillColor = limeGreen
 canvas.drawRectangle(at: Point(x: 0, y: 400), width: 400, height:200)
 
-//Text
+//BLACK text
 
 canvas.drawText(message: "pixies", at: Point(x: 25, y: 415), size: 65, kerning: 4.20)
 
@@ -108,50 +112,80 @@ canvas.drawText(message: "boston,bass", at: Point(x: 230, y: 505), size: 15, ker
 
 
 //White Circles
+
 canvas.fillColor = Color.white
+
 canvas.drawEllipse(at: Point(x: 50, y: 50), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 100, y: 50), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 150, y: 50), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 200, y: 50), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 250, y: 50), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 300, y: 50), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 350, y: 50), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 50, y: 100), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 100, y: 100), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 150, y: 100), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 200, y: 100), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 250, y: 100), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 200, y: 100), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 250, y: 100), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 300, y: 100), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 50, y: 150), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 100, y: 150), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 150, y: 150), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 200, y: 150), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 250, y: 150), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 50, y: 200), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 100, y: 200), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 150, y: 200), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 200, y: 200), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 50, y: 250), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 100, y: 250), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 150, y: 250), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 50, y: 300), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 100, y: 300), width: 45, height: 45)
+
 canvas.drawEllipse(at: Point(x: 50, y: 350), width: 45, height: 45)
 
+//WHITE text
+canvas.textColor = Color.white
+canvas.drawText(message: "with", at: Point(x: 255, y: 460), size: 15, kerning: 2)
+canvas.drawText(message: "throwing muses", at: Point(x: 255, y: 440), size: 15, kerning: 2)
+canvas.drawText(message: "big dipper", at: Point(x: 255, y: 420), size: 15, kerning: 2)
 
 
 
 
 
 
-
-
-
-
-// draw the axes with a scale
-canvas.drawAxes(withScale: true, by: 50)
 /*:
  ## Show the Assistant Editor
  Don't see any results?
