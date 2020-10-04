@@ -63,8 +63,8 @@ let black = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
 let beige = Color(hue: 69, saturation: 6, brightness: 87, alpha: 100)
 let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 
-//First rectangles
 canvas.fillColor = pink
+
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 
@@ -79,19 +79,31 @@ canvas.fillColor = pink
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 150, height: 150)
 canvas.drawRectangle(at: Point(x: 250, y: 0), width: 150, height: 150)
 canvas.drawRectangle(at: Point(x: 0, y: 250), width: 150, height: 150)
-canvas.drawRectangle(at: Point(x: 250, y: 250), width: 1750, height: 150)
+canvas.drawRectangle(at: Point(x: 250, y: 250), width: 150, height: 150)
 
+canvas.fillColor = beige
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 125, height: 125)
+canvas.drawRectangle(at: Point(x: 275, y: 0), width: 125, height: 125)
+canvas.drawRectangle(at: Point(x: 0, y: 275), width: 125, height: 125)
+canvas.drawRectangle(at: Point(x: 275, y: 275), width: 125, height: 125)
 
+canvas.fillColor = pink
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 100, height: 100)
+canvas.drawRectangle(at: Point(x: 300, y: 0), width: 100, height: 100)
+canvas.drawRectangle(at: Point(x: 0, y: 300), width: 100, height: 100)
+canvas.drawRectangle(at: Point(x: 300, y: 300), width: 100, height: 100)
 
+canvas.fillColor = black
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 75, height: 75)
+canvas.drawRectangle(at: Point(x: 325, y: 0), width: 75, height: 75)
+canvas.drawRectangle(at: Point(x: 0, y: 325), width: 75, height: 75)
+canvas.drawRectangle(at: Point(x: 325, y: 325), width: 75, height: 75)
 
-
-
-
-
-
-
-
-
+canvas.fillColor = pink
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 50, height: 50)
+canvas.drawRectangle(at: Point(x: 350, y: 0), width: 50e, height: 50)
+canvas.drawRectangle(at: Point(x: 0, y: 350), width: 50, height: 50)
+canvas.drawRectangle(at: Point(x: 350, y: 350), width: 50, height: 50)
 
 
 
