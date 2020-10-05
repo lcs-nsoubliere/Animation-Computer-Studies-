@@ -101,7 +101,7 @@ canvas.drawRectangle(at: Point(x: 325, y: 325), width: 75, height: 75)
 
 canvas.fillColor = pink
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 50, height: 50)
-canvas.drawRectangle(at: Point(x: 350, y: 0), width: 50e, height: 50)
+canvas.drawRectangle(at: Point(x: 350, y: 0), width: 50, height: 50)
 canvas.drawRectangle(at: Point(x: 0, y: 350), width: 50, height: 50)
 canvas.drawRectangle(at: Point(x: 350, y: 350), width: 50, height: 50)
 
