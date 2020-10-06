@@ -58,14 +58,6 @@ let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
 canvas.fillColor = deepOrange
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
-////triangles(testloop)
-//canvas.fillColor = brightYellow
-//var vertices: [Point] = [] //empty list of vertices
-//vertices.append(Point(x: 45, y: 200)) //start
-//vertices.append(Point(x: 0, y: 200))
-//vertices.append(Point(x: 45, y: 245)) //end
-//canvas.drawCustomShape(with: vertices)
-
 // draw triengles
 for y in stride(from: 200,
                 to: 600,
@@ -93,53 +85,38 @@ for y in stride(from: 200,
 canvas.drawShapesWithBorders = false
 
 // tryangles
-for y in stride(from: 0, through: 400, by: 45) {
+for y in stride(from: 200, through: 600, by: 45) {
 for x in stride(from: 0, through: 400, by: 45) {
 if x==0 {
-canvas.fillColor = brightYellow
-} else if x==400 {
-canvas.fillColor = brightYellow
-} else if y==600 {
-canvas.fillColor = brightYellow
-} else if y==0 {
-canvas.fillColor = brightYellow
-} else if x==0 {
-canvas.fillColor = brightYellow
-} else if x + y == 600 && x != 0 && x != 400 {
-canvas.fillColor = brightYellow
-} else if x + y == > 600 {
-canvas.fillColor = brightYellow
-} else {
 canvas.fillColor = offWhite
+} else if x==400 {
+canvas.fillColor = offWhite
+} else if y==600 {
+canvas.fillColor = offWhite
+} else if y==0 {
+canvas.fillColor = offWhite
+} else if x==0 {
+canvas.fillColor = offWhite
+} else if x + y == 600 && x != 250 && x != 250 {
+canvas.fillColor = offWhite
+} else if x + y == 600 {
+canvas.fillColor = offWhite
+} else {
+canvas.fillColor = brightYellow
+}
+
+    
+    var vertices: [Point] = [] //empty list of vertices
+    vertices.append(Point(x: x, y: y)) //start
+    vertices.append(Point(x: 45 + x, y: y))
+    vertices.append(Point(x: 45 + x, y: 45 + y)) //end
+ 
+    canvas.drawCustomShape(with: vertices)
+    
+
 }
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // draw the axes with a scale
 canvas.drawAxes(withScale: true, by: 50)
+
