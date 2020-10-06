@@ -51,7 +51,7 @@ PlaygroundPage.current.liveView = canvas
  */
 //Expressions and operators
 for x in stride(from: 5, through: 400, by: 0) {
-    if x% 100 == 0 {
+    if x % 100 == 0 {
     } else {
         //black
     }

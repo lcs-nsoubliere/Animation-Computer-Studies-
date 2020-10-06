@@ -105,11 +105,6 @@ canvas.drawRectangle(at: Point(x: 350, y: 0), width: 50, height: 50)
 canvas.drawRectangle(at: Point(x: 0, y: 350), width: 50, height: 50)
 canvas.drawRectangle(at: Point(x: 350, y: 350), width: 50, height: 50)
 
-
-
-
-
-
 // draw the axes with a scale
 canvas.fillColor = limeGreen
 canvas.drawAxes(withScale: true, by: 50)

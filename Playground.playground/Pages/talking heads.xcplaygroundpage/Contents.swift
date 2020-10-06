@@ -49,7 +49,7 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
-//COLORS
+//COLORS & vertices
 let deepOrange = Color(hue: 8, saturation: 78, brightness: 93, alpha: 100)
 let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
 let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
@@ -57,6 +57,47 @@ let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
 //canvas color
 canvas.fillColor = deepOrange
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
+////triangles(testloop)
+//canvas.fillColor = brightYellow
+//var vertices: [Point] = [] //empty list of vertices
+//vertices.append(Point(x: 45, y: 200)) //start
+//vertices.append(Point(x: 0, y: 200))
+//vertices.append(Point(x: 45, y: 245)) //end
+//canvas.drawCustomShape(with: vertices)
+
+// draw triengles
+for y in stride(from: 200,
+                to: 600,
+                by: 45) {
+    
+    for x in stride(from: 0,
+                   to: 400,
+                by: 45) {
+       
+        
+        //code in this block is repeated 10 times
+        x
+        canvas.fillColor = brightYellow
+        var vertices: [Point] = [] //empty list of vertices
+        vertices.append(Point(x: x, y: y)) //start
+        vertices.append(Point(x: 45 + x, y: y))
+        vertices.append(Point(x: 45 + x, y: 45 + y)) //end
+     
+        canvas.drawCustomShape(with: vertices)
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 

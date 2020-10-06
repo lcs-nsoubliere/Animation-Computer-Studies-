@@ -1,3 +1,8 @@
+//: [Previous](@previous)
+
+import Foundation
+
+var str = "Hello, playground"
 //: [Previous](@previous) / [Next](@next)
 //: # Blank canvas to copy
 //:
@@ -16,8 +21,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 500
-let preferredHeight = 500
+let preferredWidth = 400
+let preferredHeight = 600
 /*:
  ## Required code
  
@@ -44,43 +49,64 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+//COLORS & vertices
+let deepOrange = Color(hue: 8, saturation: 78, brightness: 93, alpha: 100)
+let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
+let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
 
-// draw the axes with a scale
-canvas.drawAxes(withScale: true, by: 50)
-// draw a line of circles
-for y in stride(from: 0,
-                to: 500,
-                by: 50) {
+
+// draw triengles
+for y in stride(from: 200,
+                to: 600,
+                by: 1) {
     
-    for x in stride(from: 0,
-                   to: 500,
-                by: 50) {
+    for x in stride(from: 45,
+                   to: 400,
+                by: 1) {
        
         
         //code in this block is repeated 10 times
-        x 
-   //create a random size
-        let size = Int.random(in: 25...50)
-        
-        //draw circle
-        canvas.fillColor = Color.black
-
-        canvas.drawEllipse(at: Point(x: x + 25, y: y + 25),
-                           width: 50,
-                             height:50)
-       
-        // Draw all remaining shapes with no fill
-        canvas.drawShapesWithFill = true
-        canvas.fillColor = Color.white
-        
-        canvas.drawEllipse(at: Point(x: x + 25, y: y + 25),
-                           width: size,
-                             height:size)
-    
+        x
+        canvas.fillColor = brightYellow
+        var vertices: [Point] = [] //empty list of vertices
+        vertices.append(Point(x: 45 + x, y: 200 + y)) //start
+        vertices.append(Point(x: 0 + x, y: 200 + y))
+        vertices.append(Point(x: 45 + x, y: 245 + y)) //end
+     
+        canvas.drawCustomShape(with: vertices)
     }
 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*:
@@ -98,3 +124,5 @@ for y in stride(from: 0,
  
  ![source_control](source-control.png "Source Control")
  */
+
+//: [Next](@next)
