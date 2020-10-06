@@ -89,7 +89,31 @@ for y in stride(from: 200,
 
     
 }
+// turn off boarders
+canvas.drawShapesWithBorders = false
 
+// tryangles
+for y in stride(from: 0, through: 400, by: 45) {
+for x in stride(from: 0, through: 400, by: 45) {
+if x==0 {
+canvas.fillColor = brightYellow
+} else if x==400 {
+canvas.fillColor = brightYellow
+} else if y==600 {
+canvas.fillColor = brightYellow
+} else if y==0 {
+canvas.fillColor = brightYellow
+} else if x==0 {
+canvas.fillColor = brightYellow
+} else if x + y == 600 && x != 0 && x != 400 {
+canvas.fillColor = brightYellow
+} else if x + y == > 600 {
+canvas.fillColor = brightYellow
+} else {
+canvas.fillColor = offWhite
+}
+}
+}
 
 
 

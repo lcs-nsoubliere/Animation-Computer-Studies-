@@ -125,4 +125,29 @@ for y in stride(from: 200,
  ![source_control](source-control.png "Source Control")
  */
 
-//: [Next](@next)
+
+// turn off boarders
+canvas.drawShapesWithBorders = false
+
+// Circle
+for y in stride(from: 0, through: 400, by: 40) {
+for x in stride(from: 0, through: 400, by: 40) {
+if x==0 {
+canvas.fillColor = limeGreen
+} else if x==400 {
+canvas.fillColor = limeGreen
+} else if y==400 {
+canvas.fillColor = limeGreen
+} else if y==0 {
+canvas.fillColor = limeGreen
+} else if x==0 {
+canvas.fillColor = limeGreen
+} else if x + y == 400 && x != 0 && x != 400 {
+canvas.fillColor = limeGreen
+} else if x + y == > 400 {
+canvas.fillColor = limeGreen
+} else {
+canvas.fillColor = offWhite
+}
+}
+}
