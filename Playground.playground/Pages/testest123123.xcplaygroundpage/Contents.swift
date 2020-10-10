@@ -21,8 +21,8 @@ var str = "Hello, playground"
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 400
-let preferredHeight = 600
+let preferredWidth = 800
+let preferredHeight = 800
 /*:
  ## Required code
  
@@ -56,12 +56,12 @@ let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
 
 
 // draw triengles
-for y in stride(from: 200,
-                to: 600,
+for y in stride(from: 0,
+                to: 800,
                 by: 1) {
     
     for x in stride(from: 45,
-                   to: 400,
+                   to: 800,
                 by: 1) {
        
         
@@ -78,37 +78,6 @@ for y in stride(from: 200,
 
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*:
  ## Show the Assistant Editor
  Don't see any results?
@@ -124,51 +93,3 @@ for y in stride(from: 200,
  
  ![source_control](source-control.png "Source Control")
  */
-
-// turn off boarders
-canvas.drawShapesWithBorders = false
-
-// tryangles
-for y in stride(from: 0, through: 600, by: 45) {
-for x in stride(from: 0, through: 400, by: 45) {
-if x==0 {
-canvas.fillColor = brightYellow
-} else if x==400 {
-canvas.fillColor = brightYellow
-} else if y==600 {
-canvas.fillColor = brightYellow
-} else if y==0 {
-canvas.fillColor = brightYellow
-} else if x==0 {
-canvas.fillColor = brightYellow
-} else if x + y == 600 && x != 0 && x != 400 {
-canvas.fillColor = brightYellow
-} else if x + y == > 600 {
-canvas.fillColor = brightYellow
-} else {
-canvas.fillColor = offWhite
-}
-}
-}
-
-// draw the axes with a scale
-canvas.drawAxes(withScale: true, by: 50)
-
-
-
-
-
-
-
-
-
-
-
-
-////triangles(testloop)
-//canvas.fillColor = brightYellow
-//var vertices: [Point] = [] //empty list of vertices
-//vertices.append(Point(x: 45, y: 200)) //start
-//vertices.append(Point(x: 0, y: 200))
-//vertices.append(Point(x: 45, y: 245)) //end
-//canvas.drawCustomShape(with: vertices)

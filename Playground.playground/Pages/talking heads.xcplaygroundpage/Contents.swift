@@ -47,7 +47,7 @@ PlaygroundPage.current.liveView = canvas
  You can remove the code on line 49 and begin writing your own code.
  
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
-
+ 
  */
 //COLORS & vertices
 let deepOrange = Color(hue: 8, saturation: 78, brightness: 93, alpha: 100)
@@ -58,65 +58,39 @@ let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
 canvas.fillColor = deepOrange
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
-// draw triengles
-for y in stride(from: 200,
-                to: 600,
-                by: 45) {
-    
-    for x in stride(from: 0,
-                   to: 400,
-                by: 45) {
-       
-        
-        //code in this block is repeated 10 times
-        x
-        canvas.fillColor = brightYellow
-        var vertices: [Point] = [] //empty list of vertices
-        vertices.append(Point(x: x, y: y)) //start
-        vertices.append(Point(x: 45 + x, y: y))
-        vertices.append(Point(x: 45 + x, y: 45 + y)) //end
-     
-        canvas.drawCustomShape(with: vertices)
-    }
-
-    
-}
 // turn off boarders
 canvas.drawShapesWithBorders = false
 
 // tryangles
 for y in stride(from: 200, through: 600, by: 45) {
-for x in stride(from: 0, through: 400, by: 45) {
-if x==0 {
-canvas.fillColor = offWhite
-} else if x==400 {
-canvas.fillColor = offWhite
-} else if y==600 {
-canvas.fillColor = offWhite
-} else if y==0 {
-canvas.fillColor = offWhite
-} else if x==0 {
-canvas.fillColor = offWhite
-} else if x + y == 600 && x != 250 && x != 250 {
-canvas.fillColor = offWhite
-} else if x + y == 600 {
-canvas.fillColor = offWhite
-} else {
-canvas.fillColor = brightYellow
-}
-
-    
-    var vertices: [Point] = [] //empty list of vertices
-    vertices.append(Point(x: x, y: y)) //start
-    vertices.append(Point(x: 45 + x, y: y))
-    vertices.append(Point(x: 45 + x, y: 45 + y)) //end
- 
-    canvas.drawCustomShape(with: vertices)
-    
-
-}
+    for x in stride(from: 0, through: 400, by: 45) {
+        if x==0 {
+            canvas.fillColor = offWhite
+        } else if x==400 {
+            canvas.fillColor = offWhite
+        } else if y==600 {
+            canvas.fillColor = offWhite
+        } else if y==0 {
+            canvas.fillColor = offWhite
+        } else if x==0 {
+            canvas.fillColor = offWhite
+        } else if x + y == 600 && x != 250 && x != 250 {
+            canvas.fillColor = offWhite
+        } else if x + y == 600 {
+            canvas.fillColor = offWhite
+        } else {
+            canvas.fillColor = brightYellow
+        }
+        
+        var vertices: [Point] = [] //empty list of vertices
+        vertices.append(Point(x: x, y: y)) //start
+        vertices.append(Point(x: 45 + x, y: y))
+        vertices.append(Point(x: 45 + x, y: 45 + y)) //end
+        
+        canvas.drawCustomShape(with: vertices)
+        
+    }
 }
 
 // draw the axes with a scale
 canvas.drawAxes(withScale: true, by: 50)
-

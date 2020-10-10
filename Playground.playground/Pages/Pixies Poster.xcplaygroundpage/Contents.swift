@@ -52,10 +52,7 @@ PlaygroundPage.current.liveView = canvas
 // draw the axes with a scale
 canvas.drawAxes(withScale: true, by: 50)
 
-
-
 canvas.defaultBorderWidth = 0
-
 
 // draw the axes with a scale
 canvas.drawAxes(withScale: true, by: 50)
@@ -66,11 +63,8 @@ canvas.drawShapesWithFill = true
 canvas.drawShapesWithBorders = false
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height:400)
 
-
-
 // draw a line of circles
 let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
-
 
 canvas.fillColor = limeGreen
 for y in stride(from: 0,
@@ -81,7 +75,6 @@ for y in stride(from: 0,
                    to: 450,
                 by: 50) {
        
-        
         //code in this block is repeated 10 times
         x
         //draw circle
@@ -112,43 +105,9 @@ canvas.drawText(message: "at the rat", at: Point(x: 230, y: 545), size: 15, kern
 canvas.drawText(message: "528 commonwealth", at: Point(x: 230, y: 525), size: 15, kerning: 2)
 canvas.drawText(message: "boston,bass", at: Point(x: 230, y: 505), size: 15, kerning: 2)
 
-
-
-
-
-
-
-
-
-
-
-
-
 //WHITE text
 canvas.textColor = Color.white
 canvas.drawText(message: "with", at: Point(x: 255, y: 460), size: 15, kerning: 2)
 canvas.drawText(message: "throwing muses", at: Point(x: 255, y: 440), size: 15, kerning: 2)
 canvas.drawText(message: "big dipper", at: Point(x: 255, y: 420), size: 15, kerning: 2)
-
-
-
-
-
-
-/*:
- ## Show the Assistant Editor
- Don't see any results?
- 
- Remember to show the Assistant Editor (1), and then switch to Live View (2):
- 
- ![timeline](timeline.png "Timeline")
-
- ## Use source control
- To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
- 
- Please commit and push your work often.
- 
- ![source_control](source-control.png "Source Control")
- */
-
 //: [Next](@next)
