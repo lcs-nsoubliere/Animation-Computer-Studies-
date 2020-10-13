@@ -39,16 +39,8 @@ let canvas = Canvas(width: preferredWidth, height: preferredHeight)
 
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
-/*:
- ## Add your code
- 
- Beginning on line 48, write a meaningful comment.
- 
- You can remove the code on line 49 and begin writing your own code.
- 
- [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
- 
- */
+
+
 //COLORS & vertices
 let deepOrange = Color(hue: 8, saturation: 78, brightness: 93, alpha: 100)
 let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
@@ -92,5 +84,22 @@ for y in stride(from: 200, through: 600, by: 45) {
     }
 }
 
-// draw the axes with a scale
-canvas.drawAxes(withScale: true, by: 50)
+//WHITE text
+canvas.textColor = offWhite
+
+canvas.drawText(message: "talking heads", at: Point(x: 15, y: 140), size: 42, kerning: 3)
+
+canvas.drawText(message: "friday, saturday, sunday", at: Point(x: 17, y: 28), size: 9, kerning: 0.05)
+
+canvas.drawText(message: "at cbgband omfug", at: Point(x: 150, y: 28), size: 9, kerning: 0.05)
+
+canvas.drawText(message: "also appearing:", at: Point(x: 270, y: 28), size: 9, kerning: 0.05)
+
+canvas.drawText(message: "september 12, 13, 14 1975", at: Point(x: 17, y: 10), size: 9, kerning: 0.05)
+
+canvas.drawText(message: "315 bowery, new york city", at: Point(x: 150, y: 10), size: 9, kerning: 0.05)
+
+canvas.drawText(message: "from brooklyn the shirts", at: Point(x: 270, y: 10), size: 9, kerning: 0.05)
+
+//// draw the axes with a scale
+//canvas.drawAxes(withScale: true, by: 50)
