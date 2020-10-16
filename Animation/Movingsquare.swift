@@ -16,6 +16,9 @@ class MovingSquare: NSObject, Sketchable {
     //       Therefore, the line immediately below must always be present.
     var canvas: Canvas
     
+    //verticle position
+    var y = 250
+    var x = 250
     // This function runs once
     override init() {
         
@@ -27,9 +30,12 @@ class MovingSquare: NSObject, Sketchable {
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
         
+        //Change verticle position
+        y += 1
+        x += 1
 //draw a square in the middle of the canvas
-        canvas.drawRectangle(at: Point(x: 250, y: 250), width: 50, height: 50, anchoredBy: .centre)
-        
+        canvas.drawRectangle(at: Point(x: x, y: y), width: 50, height: 50, anchoredBy: .centre)
+        print("The y position is \(y)")
         
         
         
