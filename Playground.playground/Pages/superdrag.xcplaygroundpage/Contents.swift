@@ -25,6 +25,8 @@ var str = "Hello, playground"
  */
 let preferredWidth = 400
 let preferredHeight = 600
+
+canvas.
 /*:
  ## Required code
  
