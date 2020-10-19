@@ -41,18 +41,22 @@ class Trippy: NSObject, Sketchable {
     func draw() {
         
         // draw circles
-        for y in stride(from: 0,
+        for y1 in stride(from: 0,
                         to: 500,
-                        by: 1) {
+                        by: 5) {
             
-            for x in stride(from: 0,
+            for x1 in stride(from: 0,
                            to: 500,
-                        by: 1) {
+                        by: 5) {
                
                 
                 //code in this block is repeated 10 times
-                x
+                
+                canvas.fillColor = Color.black
                 canvas.drawEllipse(at: Point(x: 250, y: 250), width: x1 + 1, height: y1 + 1)
+            
+            
+            
             }
 
             
