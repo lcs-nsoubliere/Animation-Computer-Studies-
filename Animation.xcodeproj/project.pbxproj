@@ -29,6 +29,7 @@
 		81F935042476B0E000CD75D8 /* Tortoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F935032476B0E000CD75D8 /* Tortoise.swift */; };
 		C86F9161253DBFF8007C8026 /* FourCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F9160253DBFF8007C8026 /* FourCircles.swift */; };
 		C86F9164253DD263007C8026 /* Trippy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F9163253DD263007C8026 /* Trippy.swift */; };
+		C88FB856253F342E00CE31A3 /* Bouncingcircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FB855253F342E00CE31A3 /* Bouncingcircle.swift */; };
 		C8B16F382538C9F0002567FF /* MovingSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F372538C9F0002567FF /* MovingSquare.swift */; };
 		C8B16F3B2539D2BB002567FF /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F3A2539D2BB002567FF /* FiveCircles.swift */; };
 		C8B16F3F253B3C2C002567FF /* RandomCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F3E253B3C2B002567FF /* RandomCircles.swift */; };
@@ -117,6 +118,7 @@
 		81F935032476B0E000CD75D8 /* Tortoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tortoise.swift; sourceTree = "<group>"; };
 		C86F9160253DBFF8007C8026 /* FourCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourCircles.swift; sourceTree = "<group>"; };
 		C86F9163253DD263007C8026 /* Trippy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trippy.swift; sourceTree = "<group>"; };
+		C88FB855253F342E00CE31A3 /* Bouncingcircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouncingcircle.swift; sourceTree = "<group>"; };
 		C8B16F372538C9F0002567FF /* MovingSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingSquare.swift; sourceTree = "<group>"; };
 		C8B16F3A2539D2BB002567FF /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		C8B16F3E253B3C2B002567FF /* RandomCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCircles.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				C8B16F3E253B3C2B002567FF /* RandomCircles.swift */,
 				C86F9160253DBFF8007C8026 /* FourCircles.swift */,
 				C86F9163253DD263007C8026 /* Trippy.swift */,
+				C88FB855253F342E00CE31A3 /* Bouncingcircle.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
+				C88FB856253F342E00CE31A3 /* Bouncingcircle.swift in Sources */,
 				C8B16F3F253B3C2C002567FF /* RandomCircles.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
 				C8B16F3B2539D2BB002567FF /* FiveCircles.swift in Sources */,

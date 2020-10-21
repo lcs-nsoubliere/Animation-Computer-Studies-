@@ -29,7 +29,9 @@ class Trippy: NSObject, Sketchable {
         
         // Set starting position
         x = 250
-
+        x1 = 250
+        y = 250
+        y1 = 250
         //slow down animation
         canvas.framesPerSecond = 10
         

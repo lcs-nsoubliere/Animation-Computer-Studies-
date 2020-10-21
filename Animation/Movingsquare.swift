@@ -33,7 +33,8 @@ class MovingSquare: NSObject, Sketchable {
         //Change verticle position
         y += 1
         x += 1
-//draw a square in the middle of the canvas
+        
+        //draw a square in the middle of the canvas
         canvas.drawRectangle(at: Point(x: x, y: y), width: 50, height: 50, anchoredBy: .centre)
         print("The y position is \(y)")
         
