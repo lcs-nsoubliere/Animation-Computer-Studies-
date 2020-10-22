@@ -16,9 +16,9 @@ class Bouncingcircle: NSObject, Sketchable {
     //       Therefore, the line immediately below must always be present.
     var canvas: Canvas
     
-    // Position of circle
-    var x: Int = 250
-    var y: Int = 250
+    // Initial position of circle
+    var x: Int = Int.random(in: 1...460)
+    var y: Int = Int.random(in: 1...460)
     
     // change in position
     var dx: Int = 1
@@ -30,13 +30,12 @@ class Bouncingcircle: NSObject, Sketchable {
         // Create canvas object – specify size
         canvas = Canvas(width: 500, height: 500)
         
-        //animation speed
-        canvas.framesPerSecond = 60
         
         // turn off boarders
         canvas.drawShapesWithBorders = false
         
-        
+        //animation speed
+        canvas.framesPerSecond = 60
     }
     
     // This function runs repeatedly, forever, to create the animated effect
@@ -46,19 +45,23 @@ class Bouncingcircle: NSObject, Sketchable {
         x+=dx
         y+=dy
         
-        //making it bounce
-        if x >= 500 {
+        //making it soot for the syafkjqwpeifh
+        if x >= 480 {
             dx = -1
-        } else if x <= 0 {
+        } else if x <= 20 {
             dx = 1
-        } else if y >= 500 {
+        } else if y >= 480 {
             dy = -1
-        } else if y <= 0 {
+        } else if y <= 20 {
             dy = 1
         }
         
+        //draw rectangle
+        canvas.fillColor = Color.white
+        canvas.drawRectangle(at: Point(x: 0, y: 0), width: 500, height: 500)
         // draw the circle
-        canvas.drawEllipse(at: Point(x: Int.random(in: 1...460), y: Int.random(in: 1...460)), width: 40, height: 40)
+        canvas.fillColor = Color.black
+        canvas.drawEllipse(at: Point(x: x, y: y ), width: 40, height: 40)
         
     }
         
