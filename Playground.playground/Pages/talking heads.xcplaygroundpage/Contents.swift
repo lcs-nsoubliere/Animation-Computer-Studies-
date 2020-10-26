@@ -101,5 +101,5 @@ canvas.drawText(message: "315 bowery, new york city", at: Point(x: 150, y: 10), 
 
 canvas.drawText(message: "from brooklyn the shirts", at: Point(x: 270, y: 10), size: 9, kerning: 0.05)
 
-//// draw the axes with a scale
-//canvas.drawAxes(withScale: true, by: 50)
+// draw the axes with a scale
+canvas.drawAxes(withScale: true, by: 50)
