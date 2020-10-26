@@ -21,8 +21,8 @@ var str = "Hello, playground"
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 300
-let preferredHeight = 600
+let preferredWidth = 700
+let preferredHeight = 700
 /*:
  ## Required code
  
@@ -49,6 +49,23 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+var x: Int
+var y: Int
+
+
+
+
+for y in stride(from:1,
+through:7,
+by:1){
+    let RandomValue = Bool.random()
+    if RandomValue == true{
+    }else{
+        for y in stride(from:1,
+        through:7,
+        by:1)
+    }
+    }
 
 
 
