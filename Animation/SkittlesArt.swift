@@ -56,6 +56,32 @@ class SkittlesArt: NSObject, Sketchable {
                 }
             }
         }
+        //now horizontally
+
+        //generate 7 random 0s or 1s
+
+        for y in stride(from: 0, through: 300, by: 50) {
+            
+            //generate the random 0 or 1
+            let skittle = Bool.random()
+            
+            //When the skittle is 1 ( or true)we draw first
+            if skittle == true {
+                //draw the line first, then go every other
+                for x in stride(from: 50, through: 250, by: 100) {
+                    
+                    //draw a line
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y))
+                }
+            } else {
+                //draw a gap first, then go every other
+                for x in stride(from: 0, through: 200, by: 100) {
+                    
+                    //draw a line
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y))
+                }
+            }
+        }
 
         
     }
