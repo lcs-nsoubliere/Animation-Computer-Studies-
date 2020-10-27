@@ -21,8 +21,8 @@ var str = "Hello, playground"
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 700
-let preferredHeight = 700
+let preferredWidth = 1000
+let preferredHeight = 1000
 /*:
  ## Required code
  
@@ -54,18 +54,36 @@ var y: Int
 
 
 
+//generate 7 random 0s or 1s
 
-for y in stride(from:1,
-through:7,
-by:1){
-    let RandomValue = Bool.random()
-    if RandomValue == true{
-    }else{
-        for y in stride(from:1,
-        through:7,
-        by:1)
+for x in stride(from: 0, through: 300, by: 50) {
+    
+    //generate the random 0 or 1
+    let skittle = Bool.random()
+    
+    //When the skittle is 1 ( or true)we draw first
+    if skittle == true {
+        //draw the line first, then go every other
+        for y in stride(from: 50, through: 250, by: 100) {
+            
+            //draw a line
+            canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + 50))
+        }
+    } else {
+        //draw a gap first, then go every other
+        for y in stride(from: 0, through: 200, by: 100) {
+            
+            //draw a line
+            canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + 50))
+        }
     }
-    }
+}
+
+
+
+
+
+
 
 
 
