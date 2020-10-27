@@ -21,8 +21,8 @@ var str = "Hello, playground"
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 1000
-let preferredHeight = 1000
+let preferredWidth = 300
+let preferredHeight = 300
 /*:
  ## Required code
  
@@ -78,22 +78,6 @@ for x in stride(from: 0, through: 300, by: 50) {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// draw the axes with a scale
-canvas.drawAxes(withScale: true, by: 50)
-
 
 /*:
  ## Show the Assistant Editor

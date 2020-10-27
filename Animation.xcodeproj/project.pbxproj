@@ -33,6 +33,7 @@
 		C8B16F382538C9F0002567FF /* MovingSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F372538C9F0002567FF /* MovingSquare.swift */; };
 		C8B16F3B2539D2BB002567FF /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F3A2539D2BB002567FF /* FiveCircles.swift */; };
 		C8B16F3F253B3C2C002567FF /* RandomCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F3E253B3C2B002567FF /* RandomCircles.swift */; };
+		C8CD527225487C0F00249E7D /* SkittlesArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CD527125487C0F00249E7D /* SkittlesArt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		C8B16F372538C9F0002567FF /* MovingSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingSquare.swift; sourceTree = "<group>"; };
 		C8B16F3A2539D2BB002567FF /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		C8B16F3E253B3C2B002567FF /* RandomCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCircles.swift; sourceTree = "<group>"; };
+		C8CD527125487C0F00249E7D /* SkittlesArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkittlesArt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,15 +173,16 @@
 				81064A1B1C132DA2007ED524 /* Sketch.swift */,
 				81064A1A1C132D69007ED524 /* Support */,
 				814ADAF8248EB34900F80486 /* BasicSketch.swift */,
+				814ADAFC248EB56900F80486 /* EmptySketch.swift */,
 				814ADAF4248EAB6A00F80486 /* TurtleSketch.swift */,
 				814ADAFE248EB5E300F80486 /* StaticSketch.swift */,
-				814ADAFC248EB56900F80486 /* EmptySketch.swift */,
 				C8B16F372538C9F0002567FF /* MovingSquare.swift */,
 				C8B16F3A2539D2BB002567FF /* FiveCircles.swift */,
 				C8B16F3E253B3C2B002567FF /* RandomCircles.swift */,
 				C86F9160253DBFF8007C8026 /* FourCircles.swift */,
 				C86F9163253DD263007C8026 /* Trippy.swift */,
 				C88FB855253F342E00CE31A3 /* Bouncingcircle.swift */,
+				C8CD527125487C0F00249E7D /* SkittlesArt.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				C88FB856253F342E00CE31A3 /* Bouncingcircle.swift in Sources */,
 				C8B16F3F253B3C2C002567FF /* RandomCircles.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
+				C8CD527225487C0F00249E7D /* SkittlesArt.swift in Sources */,
 				C8B16F3B2539D2BB002567FF /* FiveCircles.swift in Sources */,
 				C86F9164253DD263007C8026 /* Trippy.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
