@@ -21,7 +21,9 @@ class SkittlesArt: NSObject, Sketchable {
         
         // Create canvas object – specify size
         canvas = Canvas(width: 300, height: 300)
-                
+              
+        //Slow the animation down
+        canvas.framesPerSecond = 1
     }
     
     // This function runs repeatedly, forever, to create the animated effect
