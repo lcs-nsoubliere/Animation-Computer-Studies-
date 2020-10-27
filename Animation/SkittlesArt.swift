@@ -28,13 +28,15 @@ class SkittlesArt: NSObject, Sketchable {
     
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
+        
         //clear the backround each time
         canvas.fillColor = Color.white
         canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 300)
         
         //generate 7 random 0s or 1s
+        let cellSize = 10
 
-        for x in stride(from: 0, through: 300, by: 50) {
+        for x in stride(from: 0, through: 300, by: cellSize) {
             
             //generate the random 0 or 1
             let skittle = Bool.random()
@@ -42,17 +44,17 @@ class SkittlesArt: NSObject, Sketchable {
             //When the skittle is 1 ( or true)we draw first
             if skittle == true {
                 //draw the line first, then go every other
-                for y in stride(from: 50, through: 250, by: 100) {
+                for y in stride(from: cellSize, through: 300 - cellSize, by: cellSize * 2) {
                     
                     //draw a line
-                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + 50))
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + cellSize))
                 }
             } else {
                 //draw a gap first, then go every other
-                for y in stride(from: 0, through: 200, by: 100) {
+                for y in stride(from: 0, through: 300 - cellSize * 2, by: cellSize * 2) {
                     
                     //draw a line
-                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + 50))
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + cellSize))
                 }
             }
         }
@@ -60,7 +62,7 @@ class SkittlesArt: NSObject, Sketchable {
 
         //generate 7 random 0s or 1s
 
-        for y in stride(from: 0, through: 300, by: 50) {
+        for y in stride(from: 0, through: 300, by: cellSize) {
             
             //generate the random 0 or 1
             let skittle = Bool.random()
@@ -68,17 +70,17 @@ class SkittlesArt: NSObject, Sketchable {
             //When the skittle is 1 ( or true)we draw first
             if skittle == true {
                 //draw the line first, then go every other
-                for x in stride(from: 50, through: 250, by: 100) {
+                for x in stride(from: cellSize, through: 300 - cellSize, by: cellSize * 2) {
                     
                     //draw a line
-                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y))
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + cellSize, y: y))
                 }
             } else {
                 //draw a gap first, then go every other
-                for x in stride(from: 0, through: 200, by: 100) {
+                for x in stride(from: 0, through: 300 - cellSize * 2, by: cellSize * 2) {
                     
                     //draw a line
-                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y))
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + cellSize, y: y))
                 }
             }
         }
