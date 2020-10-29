@@ -59,8 +59,22 @@ let deepRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 100)
 canvas.fillColor = deepRed
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
+canvas.drawShapesWithBorders = false
+
 //draw squares
 for y in stride(from: 0, to: 400, by: 100) {
+    for x in stride(from: 0, to: 400, by: 100){
+       
+        canvas.fillColor = offWhite
+        var vertices: [Point] = [] //empty list of vertices
+        vertices.append(Point(x: 0 + 50, y: -50 + 50)) //start
+        vertices.append(Point(x: 50 + 50, y: 0 + 50))
+        vertices.append(Point(x: 0 + 50, y: 50 + 50))
+        vertices.append(Point(x: -50 + 50, y: 0 + 50))//end
+       
+        canvas.drawCustomShape(with: vertices)
+    }
+}
 
 
 
@@ -75,8 +89,8 @@ for y in stride(from: 0, to: 400, by: 100) {
 
 
 
-
-
+    // draw the axes with a scale
+    canvas.drawAxes(withScale: true, by: 50)
 /*:
  ## Show the Assistant Editor
  Don't see any results?
