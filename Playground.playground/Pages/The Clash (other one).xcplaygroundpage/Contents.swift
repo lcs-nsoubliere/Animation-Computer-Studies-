@@ -46,13 +46,13 @@ PlaygroundPage.current.liveView = canvas
  You can remove the code on line 49 and begin writing your own code.
  
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
-
+ 
  */
 //Colours
 let orange = Color(hue: 21, saturation: 76, brightness: 94, alpha: 100)
-let blue = Color(hue: 201, saturation: 72, brightness: 85, alpha: 65)
+let blue = Color(hue: 195, saturation: 100, brightness: 30, alpha: 80)
 let offWhite = Color(hue: 208, saturation: 1, brightness: 88, alpha: 100)
-let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
+let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 10)
 let deepRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 100)
 
 //Fill Canvas
@@ -64,15 +64,23 @@ canvas.drawShapesWithBorders = false
 //draw squares
 for y in stride(from: 0, to: 400, by: 100) {
     for x in stride(from: 0, to: 400, by: 100){
-       
+ 
         canvas.fillColor = offWhite
         var vertices: [Point] = [] //empty list of vertices
-        vertices.append(Point(x: 0 + 50, y: -50 + 50)) //start
-        vertices.append(Point(x: 50 + 50, y: 0 + 50))
-        vertices.append(Point(x: 0 + 50, y: 50 + 50))
-        vertices.append(Point(x: -50 + 50, y: 0 + 50))//end
-       
+        vertices.append(Point(x: x + 50, y: y))
+        vertices.append(Point(x: x + 100, y: y + 50))
+        vertices.append(Point(x: x + 50, y: y + 100))
+        vertices.append(Point(x: x, y: y + 50))
         canvas.drawCustomShape(with: vertices)
+      
+        canvas.fillColor = deepRed
+        canvas.drawEllipse(at: Point(x: x + 50, y: y + 50), width: 65, height: 65)
+   
+        canvas.fillColor = blue
+        canvas.drawEllipse(at: Point(x: x + 75, y: y + 25), width: 65, height: 65)
+        
+        canvas.fillColor = black
+        canvas.drawEllipse(at: Point(x: x + 25, y: y + 75), width: 65, height: 65)
     }
 }
 
@@ -89,8 +97,8 @@ for y in stride(from: 0, to: 400, by: 100) {
 
 
 
-    // draw the axes with a scale
-    canvas.drawAxes(withScale: true, by: 50)
+// draw the axes with a scale
+canvas.drawAxes(withScale: true, by: 50)
 /*:
  ## Show the Assistant Editor
  Don't see any results?
@@ -98,7 +106,7 @@ for y in stride(from: 0, to: 400, by: 100) {
  Remember to show the Assistant Editor (1), and then switch to Live View (2):
  
  ![timeline](timeline.png "Timeline")
-
+ 
  ## Use source control
  To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
  
