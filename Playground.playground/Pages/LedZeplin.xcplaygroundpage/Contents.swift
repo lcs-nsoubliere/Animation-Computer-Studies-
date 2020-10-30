@@ -70,22 +70,71 @@ vertices.append(Point(x: 350, y: 0))
 canvas.drawCustomShape(with: vertices)
 
 //draw the Zeplin (ellipse)
+
+canvas.drawShapesWithBorders = false
+var vertices2: [Point] = []
+vertices2.append(Point(x: 355, y: 320))
+vertices2.append(Point(x: 385, y: 320))
+vertices2.append(Point(x: 385, y: 290))
+canvas.drawCustomShape(with: vertices2)
+
+var vertices3: [Point] = []
+vertices3.append(Point(x: 355, y: 400))
+vertices3.append(Point(x: 385, y: 400))
+vertices3.append(Point(x: 385, y: 430))
+canvas.drawCustomShape(with: vertices3)
+
+canvas.drawRectangle(at: Point(x: 355, y: 320), width: 30, height: 80)
+
 canvas.fillColor = deepRed
 canvas.drawShapesWithBorders = true
 canvas.drawEllipse(at: Point(x: 200, y: 360), width: 370, height: 140)
 
-var vertices: [Point] = []
-vertices.append(Point(x: 350, y: 350))
-vertices.append(Point(x: 360, y: 350))
-vertices.append(Point(x: 360, y: 340))
-canvas.drawCustomShape(with: vertices)
-
 canvas.fillColor = black
 canvas.drawEllipse(at: Point(x: 200, y: 349), width: 350, height: 100)
 
+canvas.textColor = deepRed
+canvas.drawText(message: "MOTHERSHIP", at: Point(x: 50, y: 320), size: 45, kerning: 1)
+
+//Building
+canvas.fillColor = offWhite
+canvas.drawShapesWithBorders = true
+canvas.borderColor = black
+//to little tower things
+canvas.drawEllipse(at: Point(x: 115, y: 190), width: 20, height: 20)
+canvas.drawEllipse(at: Point(x: 285, y: 190), width: 20, height: 20)
+
+// body of the building
+canvas.drawRectangle(at: Point(x: 80, y: 0), width: 240, height: 140)
+canvas.drawRectangle(at: Point(x: 80, y: 0), width: 70, height: 190)
+canvas.drawRectangle(at: Point(x: 250, y: 0), width: 70, height: 190)
+
+// black part for windows
+canvas.fillColor = black
+canvas.drawEllipse(at: Point(x: 115, y: 150), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 285, y: 150), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 115, y: 50), width: 30, height: 30)
+canvas.drawEllipse(at: Point(x: 285, y: 50), width: 30, height: 30)
+
+//red part for windows
+canvas.fillColor = deepRed
+canvas.drawEllipse(at: Point(x: 115, y: 150), width: 20, height: 20)
+canvas.drawEllipse(at: Point(x: 285, y: 150), width: 20, height: 20)
+canvas.drawEllipse(at: Point(x: 115, y: 50), width: 20, height: 20)
+canvas.drawEllipse(at: Point(x: 285, y: 50), width: 20, height: 20)
+
+//center window
+canvas.drawEllipse(at: Point(x: 200, y: 100), width: 40, height: 40)
+
+//door
+canvas.fillColor = black
+canvas.drawRectangle(at: Point(x: 185, y: 0), width: 30, height: 45)
+canvas.fillColor = offWhite
+canvas.drawRectangle(at: Point(x: 190, y: 0), width: 20, height: 40)
+
 
 // draw the axes with a scale
-canvas.fillColor = offWhite
+canvas.textColor = Color.yellow
 canvas.drawAxes(withScale: true, by: 50)
 /*:
  ## Show the Assistant Editor
