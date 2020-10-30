@@ -50,18 +50,20 @@ PlaygroundPage.current.liveView = canvas
  
  */
 //Colours
-let offWhite = Color(hue: 208, saturation: 1, brightness: 88, alpha: 100)
+let offWhite = Color(hue: 0, saturation: 0, brightness: 100, alpha: 100)
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 let deepRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 100)
 
 //Fill Canvas
-canvas.fillColor = B
+canvas.fillColor = offWhite
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 canvas.drawShapesWithBorders = false
 
 
+
 // draw the axes with a scale
+canvas.fillColor = offWhite
 canvas.drawAxes(withScale: true, by: 50)
 /*:
  ## Show the Assistant Editor
