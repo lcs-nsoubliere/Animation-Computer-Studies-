@@ -50,16 +50,38 @@ PlaygroundPage.current.liveView = canvas
  
  */
 //Colours
-let offWhite = Color(hue: 0, saturation: 0, brightness: 100, alpha: 100)
+let offWhite = Color(hue: 60, saturation: 25, brightness: 100, alpha: 100)
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
-let deepRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 100)
+let deepRed = Color(hue: 5, saturation: 100, brightness: 100, alpha: 100)
 
 //Fill Canvas
-canvas.fillColor = offWhite
+canvas.fillColor = black
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 canvas.drawShapesWithBorders = false
 
+//draw custom shaoe (backround)
+canvas.fillColor = deepRed
+var vertices: [Point] = [] //empty list of vertices
+vertices.append(Point(x: 50, y: 0))
+vertices.append(Point(x: 100, y: 600))
+vertices.append(Point(x: 300, y: 600))
+vertices.append(Point(x: 350, y: 0))
+canvas.drawCustomShape(with: vertices)
+
+//draw the Zeplin (ellipse)
+canvas.fillColor = deepRed
+canvas.drawShapesWithBorders = true
+canvas.drawEllipse(at: Point(x: 200, y: 360), width: 370, height: 140)
+
+var vertices: [Point] = []
+vertices.append(Point(x: 350, y: 350))
+vertices.append(Point(x: 360, y: 350))
+vertices.append(Point(x: 360, y: 340))
+canvas.drawCustomShape(with: vertices)
+
+canvas.fillColor = black
+canvas.drawEllipse(at: Point(x: 200, y: 349), width: 350, height: 100)
 
 
 // draw the axes with a scale
