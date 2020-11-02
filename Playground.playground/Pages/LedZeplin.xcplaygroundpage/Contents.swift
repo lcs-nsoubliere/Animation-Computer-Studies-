@@ -125,6 +125,8 @@ canvas.drawEllipse(at: Point(x: 285, y: 50), width: 20, height: 20)
 
 //center window
 canvas.drawEllipse(at: Point(x: 200, y: 100), width: 40, height: 40)
+canvas.fillColor = offWhite
+canvas.drawEllipse(at: Point(x: 200, y: 100), width: 35, height: 35)
 
 //door
 canvas.fillColor = black
