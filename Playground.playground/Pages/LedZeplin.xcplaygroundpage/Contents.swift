@@ -60,7 +60,17 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 canvas.drawShapesWithBorders = false
 
-//draw custom shaoe (backround)
+//draw squares
+for y in stride(from: 0, to: 600, by: 25) {
+    for x in stride(from: 0, to: 400, by: 100){
+        canvas.fillColor = deepRed
+        
+        canvas.drawRectangle(at: Point(x: x, y: y), width: 400, height: 10)
+        
+    }
+}
+
+//draw custom shape (backround)
 canvas.fillColor = deepRed
 var vertices: [Point] = [] //empty list of vertices
 vertices.append(Point(x: 50, y: 0))
@@ -69,30 +79,39 @@ vertices.append(Point(x: 300, y: 600))
 vertices.append(Point(x: 350, y: 0))
 canvas.drawCustomShape(with: vertices)
 
-//draw the Zeplin (ellipse)
+//draw rectangles (black
+for y in stride(from: 0, to: 600, by: 50) {
+    for x in stride(from: 0, to: 400, by: 100){
+        canvas.fillColor = black
+        
+        canvas.drawRectangle(at: Point(x: x, y: y), width: 400, height: 10)
+        
+    }
+}
 
-canvas.drawShapesWithBorders = false
-var vertices2: [Point] = []
-vertices2.append(Point(x: 355, y: 320))
-vertices2.append(Point(x: 385, y: 320))
-vertices2.append(Point(x: 385, y: 290))
-canvas.drawCustomShape(with: vertices2)
-
-var vertices3: [Point] = []
-vertices3.append(Point(x: 355, y: 400))
-vertices3.append(Point(x: 385, y: 400))
-vertices3.append(Point(x: 385, y: 430))
-canvas.drawCustomShape(with: vertices3)
-
-canvas.drawRectangle(at: Point(x: 355, y: 320), width: 30, height: 80)
-
+//draw the Zeplin (fins)
 canvas.fillColor = deepRed
 canvas.drawShapesWithBorders = true
+canvas.defaultBorderWidth = 5
+var vertices2: [Point] = []
+vertices.append(Point(x: 385, y: 440))
+vertices.append(Point(x: 385, y: 290))
+vertices.append(Point(x: 345, y: 320))
+vertices.append(Point(x: 345, y: 400))
+vertices.append(Point(x: 385, y: 440))
+
+//Draw Zeplin (ellipse)
+canvas.fillColor = deepRed
+
 canvas.drawEllipse(at: Point(x: 200, y: 360), width: 370, height: 140)
 
+canvas.defaultBorderWidth = 1
+
+//Draw Zeplin (black ellipse for text)
 canvas.fillColor = black
 canvas.drawEllipse(at: Point(x: 200, y: 349), width: 350, height: 100)
 
+//Draw Zeplin (Text)
 canvas.textColor = deepRed
 canvas.drawText(message: "MOTHERSHIP", at: Point(x: 50, y: 320), size: 45, kerning: 1)
 
@@ -100,6 +119,7 @@ canvas.drawText(message: "MOTHERSHIP", at: Point(x: 50, y: 320), size: 45, kerni
 canvas.fillColor = offWhite
 canvas.drawShapesWithBorders = true
 canvas.borderColor = black
+
 //to little tower things
 canvas.drawEllipse(at: Point(x: 115, y: 190), width: 20, height: 20)
 canvas.drawEllipse(at: Point(x: 285, y: 190), width: 20, height: 20)
@@ -133,7 +153,6 @@ canvas.fillColor = black
 canvas.drawRectangle(at: Point(x: 185, y: 0), width: 30, height: 45)
 canvas.fillColor = offWhite
 canvas.drawRectangle(at: Point(x: 190, y: 0), width: 20, height: 40)
-
 
 // draw the axes with a scale
 canvas.textColor = Color.yellow
