@@ -99,6 +99,7 @@ vertices.append(Point(x: 385, y: 290))
 vertices.append(Point(x: 345, y: 320))
 vertices.append(Point(x: 345, y: 400))
 vertices.append(Point(x: 385, y: 440))
+canvas.drawCustomShape(with: vertices)
 
 //Draw Zeplin (ellipse)
 canvas.fillColor = deepRed
