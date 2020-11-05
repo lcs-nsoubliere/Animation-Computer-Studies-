@@ -50,7 +50,6 @@ PlaygroundPage.current.liveView = canvas
  
  */
 //Colours
-let offWhite = Color(hue: 60, saturation: 25, brightness: 100, alpha: 100)
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 let deepRed = Color(hue: 5, saturation: 100, brightness: 100, alpha: 100)
 
@@ -118,7 +117,7 @@ canvas.textColor = deepRed
 canvas.drawText(message: "MOTHERSHIP", at: Point(x: 50, y: 320), size: 45, kerning: 1)
 
 //Building
-canvas.fillColor = offWhite
+canvas.fillColor = Color.white
 canvas.drawShapesWithBorders = true
 canvas.borderColor = black
 
@@ -133,6 +132,7 @@ canvas.drawRectangle(at: Point(x: 80, y: 0), width: 240, height: 140)
 canvas.drawRectangle(at: Point(x: 80, y: 0), width: 70, height: 190)
 canvas.drawRectangle(at: Point(x: 250, y: 0), width: 70, height: 190)
 canvas.defaultBorderWidth = 1
+
 //design for close tower
 canvas.defaultLineWidth = 4
 
@@ -183,16 +183,22 @@ for y in stride(from: 0, to: 142, by: 9) {
 //center window
 canvas.fillColor = deepRed
 canvas.drawEllipse(at: Point(x: 200, y: 100), width: 40, height: 40)
-canvas.fillColor = offWhite
+canvas.fillColor = Color.white
 canvas.drawEllipse(at: Point(x: 200, y: 100), width: 35, height: 35)
 
 //door
 canvas.fillColor = black
 canvas.drawRectangle(at: Point(x: 185, y: 0), width: 30, height: 45)
-canvas.fillColor = offWhite
+canvas.fillColor = Color.white
 canvas.drawRectangle(at: Point(x: 190, y: 0), width: 20, height: 40)
 
 //TEXT
+canvas.textColor = Color.white
+canvas.drawText(message: "LD", at: Point(x: 44, y: 500), size: 50, kerning: 5)
+canvas.drawText(message: "-Z PPELN", at: Point(x: 114, y: 500), size: 50, kerning: 1)
+canvas.drawText(message: "E", at: Point(x: 54, y: 510), size: 38, kerning: 1)
+canvas.drawText(message: "E", at: Point(x: 157, y: 510), size: 38, kerning: 1)
+canvas.drawText(message: "I", at: Point(x: 299, y: 510), size: 38, kerning: 1)
 /*:
  ## Show the Assistant Editor
  Don't see any results?
