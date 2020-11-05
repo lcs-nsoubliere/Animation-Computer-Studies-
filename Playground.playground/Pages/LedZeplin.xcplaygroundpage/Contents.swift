@@ -93,13 +93,14 @@ for y in stride(from: 0, to: 600, by: 50) {
 canvas.fillColor = deepRed
 canvas.drawShapesWithBorders = true
 canvas.defaultBorderWidth = 5
+canvas.defaultLineWidth = 5
 var vertices2: [Point] = []
-vertices.append(Point(x: 385, y: 440))
-vertices.append(Point(x: 385, y: 290))
-vertices.append(Point(x: 345, y: 320))
-vertices.append(Point(x: 345, y: 400))
-vertices.append(Point(x: 385, y: 440))
-canvas.drawCustomShape(with: vertices)
+vertices2.append(Point(x: 385, y: 430))
+vertices2.append(Point(x: 385, y: 290))
+vertices2.append(Point(x: 345, y: 320))
+vertices2.append(Point(x: 345, y: 400))
+vertices2.append(Point(x: 385, y: 430))
+canvas.drawCustomShape(with: vertices2)
 
 //Draw Zeplin (ellipse)
 canvas.fillColor = deepRed
@@ -155,9 +156,17 @@ canvas.drawRectangle(at: Point(x: 185, y: 0), width: 30, height: 45)
 canvas.fillColor = offWhite
 canvas.drawRectangle(at: Point(x: 190, y: 0), width: 20, height: 40)
 
-// draw the axes with a scale
-canvas.textColor = Color.yellow
-canvas.drawAxes(withScale: true, by: 50)
+//design for building
+canvas.defaultLineWidth = 1
+
+for y in stride(from: 0, to: 140, by: 10) {
+    for x in stride(from: 150, to: 170, by: 10){
+        canvas.fillColor = black
+        
+        canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y))
+        
+    }
+}
 /*:
  ## Show the Assistant Editor
  Don't see any results?
