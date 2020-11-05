@@ -123,14 +123,38 @@ canvas.drawShapesWithBorders = true
 canvas.borderColor = black
 
 //to little tower things
+canvas.defaultBorderWidth = 3
 canvas.drawEllipse(at: Point(x: 115, y: 190), width: 20, height: 20)
 canvas.drawEllipse(at: Point(x: 285, y: 190), width: 20, height: 20)
 
 // body of the building
+canvas.defaultBorderWidth = 5
 canvas.drawRectangle(at: Point(x: 80, y: 0), width: 240, height: 140)
 canvas.drawRectangle(at: Point(x: 80, y: 0), width: 70, height: 190)
 canvas.drawRectangle(at: Point(x: 250, y: 0), width: 70, height: 190)
+canvas.defaultBorderWidth = 1
+//design for close tower
+canvas.defaultLineWidth = 4
 
+for y in stride(from: 0, to: 190, by: 9) {
+    for x in stride(from: 85, to: 155, by: 10){
+        canvas.fillColor = black
+        
+        canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y))
+        
+    }
+}
+//design for far tower
+canvas.defaultLineWidth = 4
+
+for y in stride(from: 0, to: 190, by: 9) {
+    for x in stride(from: 255, to: 320, by: 10){
+        canvas.fillColor = black
+        
+        canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y))
+        
+    }
+}
 // black part for windows
 canvas.fillColor = black
 canvas.drawEllipse(at: Point(x: 115, y: 150), width: 30, height: 30)
@@ -145,7 +169,19 @@ canvas.drawEllipse(at: Point(x: 285, y: 150), width: 20, height: 20)
 canvas.drawEllipse(at: Point(x: 115, y: 50), width: 20, height: 20)
 canvas.drawEllipse(at: Point(x: 285, y: 50), width: 20, height: 20)
 
+//design for building
+canvas.defaultLineWidth = 4
+
+for y in stride(from: 0, to: 142, by: 9) {
+    for x in stride(from: 154, to: 254, by: 10){
+        canvas.fillColor = black
+        
+        canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y))
+        
+    }
+}
 //center window
+canvas.fillColor = deepRed
 canvas.drawEllipse(at: Point(x: 200, y: 100), width: 40, height: 40)
 canvas.fillColor = offWhite
 canvas.drawEllipse(at: Point(x: 200, y: 100), width: 35, height: 35)
@@ -156,17 +192,7 @@ canvas.drawRectangle(at: Point(x: 185, y: 0), width: 30, height: 45)
 canvas.fillColor = offWhite
 canvas.drawRectangle(at: Point(x: 190, y: 0), width: 20, height: 40)
 
-//design for building
-canvas.defaultLineWidth = 1
-
-for y in stride(from: 0, to: 140, by: 10) {
-    for x in stride(from: 150, to: 170, by: 10){
-        canvas.fillColor = black
-        
-        canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y))
-        
-    }
-}
+//TEXT
 /*:
  ## Show the Assistant Editor
  Don't see any results?
