@@ -33,6 +33,8 @@
 		C8B16F382538C9F0002567FF /* MovingSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F372538C9F0002567FF /* MovingSquare.swift */; };
 		C8B16F3B2539D2BB002567FF /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F3A2539D2BB002567FF /* FiveCircles.swift */; };
 		C8B16F3F253B3C2C002567FF /* RandomCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F3E253B3C2B002567FF /* RandomCircles.swift */; };
+		C8CC685E25599DC6006B0740 /* Spiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC685D25599DC6006B0740 /* Spiral.swift */; };
+		C8CC68612559A082006B0740 /* IndivisualSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC68602559A082006B0740 /* IndivisualSpiral.swift */; };
 		C8CD527225487C0F00249E7D /* SkittlesArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CD527125487C0F00249E7D /* SkittlesArt.swift */; };
 		C8D2B54A255589C4004FBB13 /* MountainDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B549255589C4004FBB13 /* MountainDesign.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +126,8 @@
 		C8B16F372538C9F0002567FF /* MovingSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingSquare.swift; sourceTree = "<group>"; };
 		C8B16F3A2539D2BB002567FF /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		C8B16F3E253B3C2B002567FF /* RandomCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCircles.swift; sourceTree = "<group>"; };
+		C8CC685D25599DC6006B0740 /* Spiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiral.swift; sourceTree = "<group>"; };
+		C8CC68602559A082006B0740 /* IndivisualSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndivisualSpiral.swift; sourceTree = "<group>"; };
 		C8CD527125487C0F00249E7D /* SkittlesArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkittlesArt.swift; sourceTree = "<group>"; };
 		C8D2B549255589C4004FBB13 /* MountainDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDesign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +190,8 @@
 				C88FB855253F342E00CE31A3 /* Bouncingcircle.swift */,
 				C8CD527125487C0F00249E7D /* SkittlesArt.swift */,
 				C8D2B549255589C4004FBB13 /* MountainDesign.swift */,
+				C8CC685D25599DC6006B0740 /* Spiral.swift */,
+				C8CC68602559A082006B0740 /* IndivisualSpiral.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -499,9 +505,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CC685E25599DC6006B0740 /* Spiral.swift in Sources */,
 				C8B16F382538C9F0002567FF /* MovingSquare.swift in Sources */,
 				C8D2B54A255589C4004FBB13 /* MountainDesign.swift in Sources */,
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
+				C8CC68612559A082006B0740 /* IndivisualSpiral.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				C88FB856253F342E00CE31A3 /* Bouncingcircle.swift in Sources */,
