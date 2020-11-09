@@ -199,22 +199,4 @@ canvas.drawText(message: "-Z PPELN", at: Point(x: 114, y: 500), size: 50, kernin
 canvas.drawText(message: "E", at: Point(x: 54, y: 510), size: 38, kerning: 1)
 canvas.drawText(message: "E", at: Point(x: 157, y: 510), size: 38, kerning: 1)
 canvas.drawText(message: "I", at: Point(x: 299, y: 510), size: 38, kerning: 1)
-/*:
- ## Show the Assistant Editor
- Don't see any results?
- 
- Remember to show the Assistant Editor (1), and then switch to Live View (2):
- 
- ![timeline](timeline.png "Timeline")
- 
- ## Use source control
- To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
- 
- Please commit and push your work often.
- 
- ![source_control](source-control.png "Source Control")
- */
-
-//: [Next](@next)
-
-//: [Next](@next)
+canvas.copyToClipboard()
