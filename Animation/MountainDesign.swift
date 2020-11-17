@@ -18,19 +18,42 @@ class MountainDesign: NSObject, Sketchable {
     
     // This function runs once
     override init() {
-       
-        let Grey = Color(hue: 303, saturation: 83, brightness: 9, alpha: 100)
-       let Purple = Color(hue: 279, saturation: 74, brightness: 100, alpha: 100)
         
-        // Create canvas object – specify size
+      
+        let fuchsia = Color(hue: 279, saturation: 74, brightness: 100, alpha: 100)
+        
+      
+      
+        // Create canvas size
         canvas = Canvas(width: 800, height: 800)
         
         //draw sky
-        canvas.fillColor = Purple
+        canvas.fillColor = fuchsia
         canvas.drawRectangle(at: Point(x: 0, y: 0), width: 800, height: 800)
         
+    }
+    
+    // This function runs repeatedly, forever, to create the animated effect
+    func draw() {
+        
+        //design for stars
+        canvas.defaultLineWidth = 4
+        
+        for y in stride(from: 0, to: 800, by: 25) {
+            for x in stride(from: 0, to: 800, by: 25){
+                canvas.defaultLineWidth = 5
+                canvas.lineColor = Color.yellow
+               
+                // Change position
+                
+                canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y))
+                
+                
+            }
+            
+        }
         //Draw Mountain
-        canvas.fillColor = Grey
+        canvas.fillColor = Color.purple
         var vertices: [Point] = [] //empty list of vertices
         vertices.append(Point(x: 0, y: 0))
         vertices.append(Point(x: 0, y: 600))
@@ -52,22 +75,21 @@ class MountainDesign: NSObject, Sketchable {
         vertices.append(Point(x: 800, y: 621))
         vertices.append(Point(x: 800, y: 0))
         canvas.drawCustomShape(with: vertices)
-                
-        //draw mountain top
+        
+        //draw mountain top (SNOW)
         canvas.fillColor = Color.white
         var vertices1: [Point] = [] //empty list of vertices
+        vertices1.append(Point(x: 250, y: 650))
         vertices1.append(Point(x: 300, y: 689))
         vertices1.append(Point(x: 350, y: 701))
         vertices1.append(Point(x: 400, y: 685))
-        vertices1.append(Point(x: 300, y: 689))
+        vertices1.append(Point(x: 450, y: 644))
+        vertices1.append(Point(x: 422, y: 623))
+        vertices1.append(Point(x: 370, y: 600))
+        vertices1.append(Point(x: 310, y: 611))
+        vertices1.append(Point(x: 270, y: 633))
         canvas.drawCustomShape(with: vertices1)
-    }
-    
-    // This function runs repeatedly, forever, to create the animated effect
-    func draw() {
         
-        
+        canvas.drawAxes(withScale: true, by: 50)
     }
-    
 }
-
