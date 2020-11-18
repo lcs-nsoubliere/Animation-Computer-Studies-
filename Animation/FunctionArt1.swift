@@ -1,4 +1,3 @@
-
 //  EmptySketch.swift
 //  Animation
 //
@@ -16,7 +15,7 @@ class FunctionArt1: NSObject, Sketchable {
     //       Therefore, the line immediately below must always be present.
     var canvas: Canvas
 
-    // Add many spirals
+    // Add many functions
     // This is now a list, or an array, of functions
     var functions: [MathFunction] = []    // empty list
     
@@ -24,30 +23,26 @@ class FunctionArt1: NSObject, Sketchable {
     override init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 1000, height: 1000)
+        canvas = Canvas(width: 500, height: 500)
              
-        // Initialize many spirals
-        for i in 1...50 {
+        // Initialize many functions
+        for i in 1...20 {
             
-            
-            //create functions
+            // Create the function
             let newFunction = MathFunction(a: 1.0,
-                                           k: 1.0,
-                                           d: CGFloat(i) * 50,
+                                           k: 5.0,
+                                           d: CGFloat(i) * 25 - CGFloat(canvas.width / 5),
                                            c: 0,
-                                           canvas: canvas)
+                                           canvas: canvas,
+                                           type: .reciprocal)
             
-            
-            //add it to the list
+            // Add it to the list
             functions.append(newFunction)
-        
-        
+            
         }
-     
-        
         
         // Speed
-        canvas.framesPerSecond = 100
+        canvas.framesPerSecond = 60
     }
 
     // This function runs repeatedly, forever, to create the animated effect
@@ -56,7 +51,7 @@ class FunctionArt1: NSObject, Sketchable {
         // What frame are we on?
 //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 1
+        canvas.defaultLineWidth = 100
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
