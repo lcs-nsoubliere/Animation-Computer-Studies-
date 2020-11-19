@@ -71,9 +71,17 @@ class MathFunction {
     // Update (or draw) the position of this spiral
     func update(on canvas: Canvas, usingInputValue x: Int) {
 
+        // make sure each re draw of each function starts off screen
+        if x==0 {
+            // I want every function to begin off the left side of the canvas
+            self.lastPoint = Point(x: -1 * canvas.width / 2 - 5,
+                                   y: 0)
+        }
+
         // Start drawing after the first frame
         if x > 0 && x < canvas.width {
-
+            
+            
             // Determine the next x position
             let nextX: CGFloat = CGFloat(x - canvas.width / 2)
 
