@@ -21,23 +21,30 @@ class FunctionArt1: NSObject, Sketchable {
     
     // This function runs once
     override init() {
-        
+     
         // Create canvas object – specify size
         canvas = Canvas(width: 500, height: 500)
              
+        canvas.lineColor = Color.init(hue: Int.random(in: 1...360),
+                                      saturation:  Int.random(in: 1...100),
+                                      brightness:  Int.random(in: 1...100),
+                                      alpha:  Int.random(in: 25...100))
+        
+
         // Initialize many functions
         for i in 1...20 {
             
             // Create the function
             let newFunction = MathFunction(a: 1.0,
                                            k: 5.0,
-                                           d: CGFloat(i) * 25 - CGFloat(canvas.width / 5),
+                                           d: CGFloat(i) * 25 - CGFloat(canvas.width / 1),
                                            c: 0,
                                            canvas: canvas,
-                                           type: .reciprocal)
+                                           type: .exponential)
             
             // Add it to the list
             functions.append(newFunction)
+           
             
         }
         
@@ -51,14 +58,15 @@ class FunctionArt1: NSObject, Sketchable {
         // What frame are we on?
 //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 100
-        
+        canvas.defaultLineWidth = 1
+      
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
 
         // Update the position of all functions
         for function in functions {
-            function.update(on: canvas)
+            function.update(on: canvas,
+                            usingInputValue: canvas.frameCount)
         }
 
     
