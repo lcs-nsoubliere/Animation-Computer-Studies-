@@ -45,7 +45,6 @@ class MountainDesign: NSObject, Sketchable {
                 canvas.lineColor = Color.yellow
                
                 // Change position
-                
                 canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y))
                 
                 
@@ -90,6 +89,34 @@ class MountainDesign: NSObject, Sketchable {
         vertices1.append(Point(x: 270, y: 633))
         canvas.drawCustomShape(with: vertices1)
         
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        canvas.defaultLineWidth = 1
         canvas.drawAxes(withScale: true, by: 50)
     }
 }
