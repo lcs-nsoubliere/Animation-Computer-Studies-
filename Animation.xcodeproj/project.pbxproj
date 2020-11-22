@@ -39,6 +39,7 @@
 		C8CC685E25599DC6006B0740 /* IndividualSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC685D25599DC6006B0740 /* IndividualSpiral.swift */; };
 		C8CD527225487C0F00249E7D /* SkittlesArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CD527125487C0F00249E7D /* SkittlesArt.swift */; };
 		C8D2B54A255589C4004FBB13 /* MountainDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B549255589C4004FBB13 /* MountainDesign.swift */; };
+		C8F98A0725680273005DA737 /* FunctionArt2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F98A0625680273005DA737 /* FunctionArt2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		C8CC685D25599DC6006B0740 /* IndividualSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSpiral.swift; sourceTree = "<group>"; };
 		C8CD527125487C0F00249E7D /* SkittlesArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkittlesArt.swift; sourceTree = "<group>"; };
 		C8D2B549255589C4004FBB13 /* MountainDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDesign.swift; sourceTree = "<group>"; };
+		C8F98A0625680273005DA737 /* FunctionArt2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				C8210AE0255C81670019B027 /* Spiral.swift */,
 				C8210AE425642F830019B027 /* MathFunction.swift */,
 				C8210AE7256435480019B027 /* FunctionArt1.swift */,
+				C8F98A0625680273005DA737 /* FunctionArt2.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				814ADAF3248E9FDA00F80486 /* Sketchable.swift in Sources */,
 				C8210AE8256435480019B027 /* FunctionArt1.swift in Sources */,
 				814ADAFD248EB56900F80486 /* EmptySketch.swift in Sources */,
+				C8F98A0725680273005DA737 /* FunctionArt2.swift in Sources */,
 				814ADAFF248EB5E300F80486 /* StaticSketch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

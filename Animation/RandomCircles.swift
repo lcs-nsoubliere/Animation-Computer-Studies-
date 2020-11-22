@@ -24,7 +24,7 @@ class RandomCircles: NSObject, Sketchable {
     override init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 500, height: 500)
+        canvas = Canvas(width: 1000, height: 1000)
         
     }
     
@@ -32,8 +32,8 @@ class RandomCircles: NSObject, Sketchable {
     func draw() {
         
         //change vertical position
-        let y = Int.random(in:0...500)
-        let x = Int.random(in:0...500)
+        let y = Int.random(in:0...1000)
+        let x = Int.random(in:0...1000)
         let colour = Int.random(in: 0...360)
         canvas.fillColor = Color(hue: colour, saturation: 100, brightness: 100, alpha: 10)
         

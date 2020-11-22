@@ -13,14 +13,31 @@ class Sketch: NSObject {
     // To try out other included sketches:
     // 1. Comment out the code on line 11.
     // 2. Uncomment one of the lines below.
-    //    var currentDrawing = TurtleSketch()
-    //    var currentDrawing = AudioInputSketch()
-    //    var currentDrawing = StaticSketch()
+    //var currentDrawing = TurtleSketch()
+    //var currentDrawing = AudioInputSketch()
+    //var currentDrawing = StaticSketch()
     //var currentDrawing = SkittlesArt()
-    //var currentDrawing = MountainDesign()
-   // var currentDrawing = IndividualSpiral()
+    var currentDrawing = MountainDesign()
+    //var currentDrawing = IndividualSpiral()
     //var currentDrawing = Trippy()
     //var currentDrawing = RandomCircles()
     //var currentDrawing = Spiral()
-    var currentDrawing = FunctionArt1()
+    //var currentDrawing = FunctionArt1()
+    //var currentDrawing = FunctionArt2()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
