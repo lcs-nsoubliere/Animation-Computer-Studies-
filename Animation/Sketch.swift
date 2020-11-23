@@ -17,16 +17,20 @@ class Sketch: NSObject {
     //var currentDrawing = AudioInputSketch()
     //var currentDrawing = StaticSketch()
     //var currentDrawing = SkittlesArt()
-    var currentDrawing = MountainDesign()
+    //var currentDrawing = MountainDesign()
     //var currentDrawing = IndividualSpiral()
     //var currentDrawing = Trippy()
     //var currentDrawing = RandomCircles()
     //var currentDrawing = Spiral()
-    //var currentDrawing = FunctionArt1()
+    //var currentDrawing = FunctionArt1(OG)()
     //var currentDrawing = FunctionArt2()
-    
-    
-    
+    var currentDrawing = FunctionArt3()
+    //var currentDrawing = FunctionArt4()
+    //var currentDrawing = FunctionArt5()
+    //var currentDrawing = FunctionArt6()
+    //var currentDrawing = FunctionArt7()
+    //var currentDrawing = FunctionArt8()
+    //var currentDrawing = FunctionArt9()
     
     
     

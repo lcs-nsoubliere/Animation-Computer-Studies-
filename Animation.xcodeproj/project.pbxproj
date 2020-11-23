@@ -29,9 +29,15 @@
 		81F935042476B0E000CD75D8 /* Tortoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F935032476B0E000CD75D8 /* Tortoise.swift */; };
 		C8210AE1255C81670019B027 /* Spiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8210AE0255C81670019B027 /* Spiral.swift */; };
 		C8210AE525642F830019B027 /* MathFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8210AE425642F830019B027 /* MathFunction.swift */; };
-		C8210AE8256435480019B027 /* FunctionArt1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8210AE7256435480019B027 /* FunctionArt1.swift */; };
+		C8210AE8256435480019B027 /* FunctionArt1(OG).swift in Sources */ = {isa = PBXBuildFile; fileRef = C8210AE7256435480019B027 /* FunctionArt1(OG).swift */; };
+		C84B0EBA256BF30200A28FC9 /* FunctionArt3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EB9256BF30200A28FC9 /* FunctionArt3.swift */; };
+		C84B0EBD256BF30D00A28FC9 /* FunctionArt4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EBC256BF30D00A28FC9 /* FunctionArt4.swift */; };
+		C84B0EC0256BF31A00A28FC9 /* FunctionArt5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EBF256BF31A00A28FC9 /* FunctionArt5.swift */; };
+		C84B0EC3256BF32800A28FC9 /* FunctionArt6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EC2256BF32800A28FC9 /* FunctionArt6.swift */; };
+		C84B0EC6256BF33200A28FC9 /* FunctionArt7.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EC5256BF33200A28FC9 /* FunctionArt7.swift */; };
+		C84B0EC9256BF33D00A28FC9 /* FunctionArt8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EC8256BF33D00A28FC9 /* FunctionArt8.swift */; };
+		C84B0ECC256BF34D00A28FC9 /* FunctionArt9.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0ECB256BF34D00A28FC9 /* FunctionArt9.swift */; };
 		C86F9161253DBFF8007C8026 /* FourCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F9160253DBFF8007C8026 /* FourCircles.swift */; };
-		C86F9164253DD263007C8026 /* Trippy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F9163253DD263007C8026 /* Trippy.swift */; };
 		C88FB856253F342E00CE31A3 /* Bouncingcircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FB855253F342E00CE31A3 /* Bouncingcircle.swift */; };
 		C8B16F382538C9F0002567FF /* MovingSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F372538C9F0002567FF /* MovingSquare.swift */; };
 		C8B16F3B2539D2BB002567FF /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B16F3A2539D2BB002567FF /* FiveCircles.swift */; };
@@ -125,9 +131,15 @@
 		81F935032476B0E000CD75D8 /* Tortoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tortoise.swift; sourceTree = "<group>"; };
 		C8210AE0255C81670019B027 /* Spiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiral.swift; sourceTree = "<group>"; };
 		C8210AE425642F830019B027 /* MathFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunction.swift; sourceTree = "<group>"; };
-		C8210AE7256435480019B027 /* FunctionArt1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt1.swift; sourceTree = "<group>"; };
+		C8210AE7256435480019B027 /* FunctionArt1(OG).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FunctionArt1(OG).swift"; sourceTree = "<group>"; };
+		C84B0EB9256BF30200A28FC9 /* FunctionArt3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt3.swift; sourceTree = "<group>"; };
+		C84B0EBC256BF30D00A28FC9 /* FunctionArt4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt4.swift; sourceTree = "<group>"; };
+		C84B0EBF256BF31A00A28FC9 /* FunctionArt5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt5.swift; sourceTree = "<group>"; };
+		C84B0EC2256BF32800A28FC9 /* FunctionArt6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt6.swift; sourceTree = "<group>"; };
+		C84B0EC5256BF33200A28FC9 /* FunctionArt7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt7.swift; sourceTree = "<group>"; };
+		C84B0EC8256BF33D00A28FC9 /* FunctionArt8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt8.swift; sourceTree = "<group>"; };
+		C84B0ECB256BF34D00A28FC9 /* FunctionArt9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt9.swift; sourceTree = "<group>"; };
 		C86F9160253DBFF8007C8026 /* FourCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourCircles.swift; sourceTree = "<group>"; };
-		C86F9163253DD263007C8026 /* Trippy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trippy.swift; sourceTree = "<group>"; };
 		C88FB855253F342E00CE31A3 /* Bouncingcircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouncingcircle.swift; sourceTree = "<group>"; };
 		C8B16F372538C9F0002567FF /* MovingSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingSquare.swift; sourceTree = "<group>"; };
 		C8B16F3A2539D2BB002567FF /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
@@ -192,15 +204,21 @@
 				C8B16F3A2539D2BB002567FF /* FiveCircles.swift */,
 				C8B16F3E253B3C2B002567FF /* RandomCircles.swift */,
 				C86F9160253DBFF8007C8026 /* FourCircles.swift */,
-				C86F9163253DD263007C8026 /* Trippy.swift */,
 				C88FB855253F342E00CE31A3 /* Bouncingcircle.swift */,
 				C8CD527125487C0F00249E7D /* SkittlesArt.swift */,
 				C8D2B549255589C4004FBB13 /* MountainDesign.swift */,
 				C8CC685D25599DC6006B0740 /* IndividualSpiral.swift */,
 				C8210AE0255C81670019B027 /* Spiral.swift */,
 				C8210AE425642F830019B027 /* MathFunction.swift */,
-				C8210AE7256435480019B027 /* FunctionArt1.swift */,
+				C8210AE7256435480019B027 /* FunctionArt1(OG).swift */,
 				C8F98A0625680273005DA737 /* FunctionArt2.swift */,
+				C84B0EB9256BF30200A28FC9 /* FunctionArt3.swift */,
+				C84B0EBC256BF30D00A28FC9 /* FunctionArt4.swift */,
+				C84B0EBF256BF31A00A28FC9 /* FunctionArt5.swift */,
+				C84B0EC2256BF32800A28FC9 /* FunctionArt6.swift */,
+				C84B0EC5256BF33200A28FC9 /* FunctionArt7.swift */,
+				C84B0EC8256BF33D00A28FC9 /* FunctionArt8.swift */,
+				C84B0ECB256BF34D00A28FC9 /* FunctionArt9.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -516,8 +534,11 @@
 			files = (
 				C8CC685E25599DC6006B0740 /* IndividualSpiral.swift in Sources */,
 				C8B16F382538C9F0002567FF /* MovingSquare.swift in Sources */,
+				C84B0EC9256BF33D00A28FC9 /* FunctionArt8.swift in Sources */,
+				C84B0EC6256BF33200A28FC9 /* FunctionArt7.swift in Sources */,
 				C8D2B54A255589C4004FBB13 /* MountainDesign.swift in Sources */,
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
+				C84B0ECC256BF34D00A28FC9 /* FunctionArt9.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				C88FB856253F342E00CE31A3 /* Bouncingcircle.swift in Sources */,
@@ -527,14 +548,17 @@
 				C8210AE1255C81670019B027 /* Spiral.swift in Sources */,
 				C8CD527225487C0F00249E7D /* SkittlesArt.swift in Sources */,
 				C8B16F3B2539D2BB002567FF /* FiveCircles.swift in Sources */,
-				C86F9164253DD263007C8026 /* Trippy.swift in Sources */,
+				C84B0EBD256BF30D00A28FC9 /* FunctionArt4.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
 				C86F9161253DBFF8007C8026 /* FourCircles.swift in Sources */,
 				814ADAF1248E9F8200F80486 /* AudioAnalyser.swift in Sources */,
 				814ADAF3248E9FDA00F80486 /* Sketchable.swift in Sources */,
-				C8210AE8256435480019B027 /* FunctionArt1.swift in Sources */,
+				C84B0EC0256BF31A00A28FC9 /* FunctionArt5.swift in Sources */,
+				C84B0EC3256BF32800A28FC9 /* FunctionArt6.swift in Sources */,
+				C8210AE8256435480019B027 /* FunctionArt1(OG).swift in Sources */,
 				814ADAFD248EB56900F80486 /* EmptySketch.swift in Sources */,
 				C8F98A0725680273005DA737 /* FunctionArt2.swift in Sources */,
+				C84B0EBA256BF30200A28FC9 /* FunctionArt3.swift in Sources */,
 				814ADAFF248EB5E300F80486 /* StaticSketch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

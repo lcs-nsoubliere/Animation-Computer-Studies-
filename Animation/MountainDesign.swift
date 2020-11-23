@@ -21,7 +21,7 @@ class MountainDesign: NSObject, Sketchable {
         
         
         let fuchsia = Color(hue: 279, saturation: 74, brightness: 100, alpha: 100)
-        let darkPurple = Color(hue: 103, saturation: 39, brightness: 112, alpha: 70)
+      //  let darkPurple = Color(hue: 103, saturation: 39, brightness: 112, alpha: 70)
         
         
         // Create canvas size
@@ -108,7 +108,7 @@ class MountainDesign: NSObject, Sketchable {
         canvas.drawCustomShape(with: vertices3)
         
         //draw closer mountain
-        canvas.fillColor = darkPurple
+       // canvas.fillColor = darkPurple
         var vertices4: [Point] = [] //empty list of vertices
         vertices4.append(Point(x: 20, y: 400))
         vertices4.append(Point(x: 180, y: 456))
