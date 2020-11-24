@@ -78,7 +78,7 @@ class IndividualSpiral {
             
             // Set the "new" last point, now that the line is drawn
             lastPoint = nextPoint
-            
+
         }
         
         

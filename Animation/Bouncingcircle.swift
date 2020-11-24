@@ -35,7 +35,7 @@ class Bouncingcircle: NSObject, Sketchable {
         canvas.drawShapesWithBorders = false
         
         //animation speed
-        canvas.framesPerSecond = 60
+        canvas.framesPerSecond = 120
     }
     
     // This function runs repeatedly, forever, to create the animated effect

@@ -20,8 +20,8 @@ class SkittlesArt: NSObject, Sketchable {
     override init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 300, height: 300)
-              
+        canvas = Canvas(width: 500, height: 500)
+        
         //Slow the animation down
         canvas.framesPerSecond = 1
     }
@@ -31,7 +31,7 @@ class SkittlesArt: NSObject, Sketchable {
         
         //clear the backround each time
         canvas.fillColor = Color.white
-        canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 300)
+        //canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 300)
         
         //generate 7 random 0s or 1s
         let cellSize = 10

@@ -40,19 +40,19 @@ class FunctionArt1: NSObject, Sketchable {
                                            d: CGFloat(i) * 25 - CGFloat(canvas.width / 2),
                                            c: 0,
                                            canvas: canvas,
-                                           type: .quadratic)
+                                           type: .linear)
             //All of the types of functions
-            linear
-            quadratic
-            cubic
-            squareRoot
-            absoluteValue
-            exponential
-            reciprocal
+            //linear
+            //quadratic
+            //cubic
+            //squareRoot
+            //absoluteValue
+            //exponential
+            //reciprocal
    
             // Add it to the list
             functions.append(newFunction)
-            
+        
             
         }
         

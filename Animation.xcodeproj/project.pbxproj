@@ -29,7 +29,7 @@
 		81F935042476B0E000CD75D8 /* Tortoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F935032476B0E000CD75D8 /* Tortoise.swift */; };
 		C8210AE1255C81670019B027 /* Spiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8210AE0255C81670019B027 /* Spiral.swift */; };
 		C8210AE525642F830019B027 /* MathFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8210AE425642F830019B027 /* MathFunction.swift */; };
-		C8210AE8256435480019B027 /* FunctionArt1(OG).swift in Sources */ = {isa = PBXBuildFile; fileRef = C8210AE7256435480019B027 /* FunctionArt1(OG).swift */; };
+		C8210AE8256435480019B027 /* FunctionArt1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8210AE7256435480019B027 /* FunctionArt1.swift */; };
 		C84B0EBA256BF30200A28FC9 /* FunctionArt3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EB9256BF30200A28FC9 /* FunctionArt3.swift */; };
 		C84B0EBD256BF30D00A28FC9 /* FunctionArt4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EBC256BF30D00A28FC9 /* FunctionArt4.swift */; };
 		C84B0EC0256BF31A00A28FC9 /* FunctionArt5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B0EBF256BF31A00A28FC9 /* FunctionArt5.swift */; };
@@ -131,7 +131,7 @@
 		81F935032476B0E000CD75D8 /* Tortoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tortoise.swift; sourceTree = "<group>"; };
 		C8210AE0255C81670019B027 /* Spiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiral.swift; sourceTree = "<group>"; };
 		C8210AE425642F830019B027 /* MathFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunction.swift; sourceTree = "<group>"; };
-		C8210AE7256435480019B027 /* FunctionArt1(OG).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FunctionArt1(OG).swift"; sourceTree = "<group>"; };
+		C8210AE7256435480019B027 /* FunctionArt1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt1.swift; sourceTree = "<group>"; };
 		C84B0EB9256BF30200A28FC9 /* FunctionArt3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt3.swift; sourceTree = "<group>"; };
 		C84B0EBC256BF30D00A28FC9 /* FunctionArt4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt4.swift; sourceTree = "<group>"; };
 		C84B0EBF256BF31A00A28FC9 /* FunctionArt5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt5.swift; sourceTree = "<group>"; };
@@ -210,7 +210,7 @@
 				C8CC685D25599DC6006B0740 /* IndividualSpiral.swift */,
 				C8210AE0255C81670019B027 /* Spiral.swift */,
 				C8210AE425642F830019B027 /* MathFunction.swift */,
-				C8210AE7256435480019B027 /* FunctionArt1(OG).swift */,
+				C8210AE7256435480019B027 /* FunctionArt1.swift */,
 				C8F98A0625680273005DA737 /* FunctionArt2.swift */,
 				C84B0EB9256BF30200A28FC9 /* FunctionArt3.swift */,
 				C84B0EBC256BF30D00A28FC9 /* FunctionArt4.swift */,
@@ -555,7 +555,7 @@
 				814ADAF3248E9FDA00F80486 /* Sketchable.swift in Sources */,
 				C84B0EC0256BF31A00A28FC9 /* FunctionArt5.swift in Sources */,
 				C84B0EC3256BF32800A28FC9 /* FunctionArt6.swift in Sources */,
-				C8210AE8256435480019B027 /* FunctionArt1(OG).swift in Sources */,
+				C8210AE8256435480019B027 /* FunctionArt1.swift in Sources */,
 				814ADAFD248EB56900F80486 /* EmptySketch.swift in Sources */,
 				C8F98A0725680273005DA737 /* FunctionArt2.swift in Sources */,
 				C84B0EBA256BF30200A28FC9 /* FunctionArt3.swift in Sources */,

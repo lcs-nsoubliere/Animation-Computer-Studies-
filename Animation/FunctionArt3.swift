@@ -40,7 +40,16 @@ class FunctionArt3: NSObject, Sketchable {
                                            d: CGFloat(i) * 25 - CGFloat(canvas.width / 2),
                                            c: 0,
                                            canvas: canvas,
-                                           type: .)
+                                           type: .linear)
+            
+            //All of the types of functions
+           // linear
+            //quadratic
+            //cubic
+            //squareRoot
+            //absoluteValue
+            //exponential
+            //reciprocal
             
             // Add it to the list
             functions.append(newFunction)
@@ -67,7 +76,7 @@ class FunctionArt3: NSObject, Sketchable {
         // What frame are we on?
         //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 10
+        canvas.defaultLineWidth = 1
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
@@ -85,7 +94,7 @@ class FunctionArt3: NSObject, Sketchable {
             for function in functions {
           
                 //Gradually change the vertical stretch / compression
-                function.a = 0.25 * sin(Degrees(canvas.frameCount).asRadians() / 2)
+                function.a = 0.25 * sin(Degrees(canvas.frameCount).asRadians() / 0.5)
                 
 //                function.c = CGFloat(newC)
                 function.update(on: canvas,
