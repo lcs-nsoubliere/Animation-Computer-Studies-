@@ -20,12 +20,14 @@ class IndividualSpiral {
     var lastPoint: Point
     var angleOffset: Int
     var hue: Float
-    
+    var brightness: Float
+    var saturation: Float
+
     // 2. Initializer
     //
     //    An initializer has one job: give each property an initial
     //    value
-    init(angleOffset: Int, hue: Float) {
+    init(angleOffset: Int, hue: Float, brightness: Float = 90, saturation: Float = 80) {
         
         // I want every spiral to begin at the same position
         self.lastPoint = Point(x: 0, y: 0)
@@ -33,8 +35,11 @@ class IndividualSpiral {
         // Each spiral begins at a slightly different angle
         self.angleOffset = angleOffset
         
-        // Set the hue
+        // Set the color characteristic
         self.hue = hue
+        self.brightness = brightness
+        self.saturation = saturation
+        
     
     }
     
@@ -69,8 +74,8 @@ class IndividualSpiral {
             
             // Set the line color
             canvas.lineColor = Color(hue: hue,
-                                     saturation: 100,
-                                     brightness: 50,
+                                     saturation: saturation,
+                                     brightness: brightness,
                                      alpha: 100)
             
             // Draw a line from the last point to the next point

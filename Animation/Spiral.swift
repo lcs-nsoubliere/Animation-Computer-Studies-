@@ -31,7 +31,9 @@ class Spiral: NSObject, Sketchable {
             
             // Give the one spiral a starting angle of rotation
             let spiral = IndividualSpiral(angleOffset: i * 75,
-                                          hue: Float(i) * 75)
+                                          hue: 0,
+                                          brightness: Float(i) * 75,
+                                          saturation: 0)
             
             // Add the new spiral to the list
             spirals.append(spiral)
