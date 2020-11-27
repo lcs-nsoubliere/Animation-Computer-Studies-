@@ -40,7 +40,7 @@ class Spiral: NSObject, Sketchable {
         }
         
         // Speed
-        canvas.framesPerSecond = 100
+        canvas.framesPerSecond = 100000
     }
 
     // This function runs repeatedly, forever, to create the animated effect

@@ -43,13 +43,14 @@ class FunctionArt3: NSObject, Sketchable {
                                            type: .linear)
             
             //All of the types of functions
-           // linear
+            //linear
             //quadratic
             //cubic
             //squareRoot
             //absoluteValue
             //exponential
             //reciprocal
+            
             
             // Add it to the list
             functions.append(newFunction)
@@ -69,7 +70,7 @@ class FunctionArt3: NSObject, Sketchable {
                                  saturation: 0,
                                  brightness: 100,
                                  alpha: 50)
-       
+        
         canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
         
         
@@ -80,26 +81,26 @@ class FunctionArt3: NSObject, Sketchable {
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
-     
+        
         //raondomly change the verticla position
-//        let newC = Int.random(in: -150...150)
+        //        let newC = Int.random(in: -150...150)
         
         
         //draw the entire list of functions all at once
         for x in 0...canvas.width {
-   
+            
             
             
             // Update the position of all functions
             for function in functions {
-          
+                
                 //Gradually change the vertical stretch / compression
                 function.a = 0.25 * sin(Degrees(canvas.frameCount).asRadians() / 0.5)
                 
-//                function.c = CGFloat(newC)
+                //                function.c = CGFloat(newC)
                 function.update(on: canvas,
                                 usingInputValue: x)
-           
+                
             }
             
             

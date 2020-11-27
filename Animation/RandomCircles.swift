@@ -35,7 +35,7 @@ class RandomCircles: NSObject, Sketchable {
         let y = Int.random(in:0...1000)
         let x = Int.random(in:0...1000)
         let colour = Int.random(in: 0...360)
-        canvas.fillColor = Color(hue: colour, saturation: 100, brightness: 100, alpha: 10)
+        canvas.fillColor = Color(hue: colour, saturation: 100, brightness: 100, alpha: 1)
         
         // change size of square
         size1 = Int.random(in: 50...100)

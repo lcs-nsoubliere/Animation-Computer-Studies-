@@ -54,7 +54,7 @@ class IndividualSpiral {
         if canvas.frameCount > 0 {
             
             //set line width
-            canvas.defaultLineWidth = 100
+            canvas.defaultLineWidth = 10
             
             // Set the radius
             let radius = CGFloat(canvas.frameCount) / 5
@@ -76,7 +76,7 @@ class IndividualSpiral {
             canvas.lineColor = Color(hue: hue,
                                      saturation: saturation,
                                      brightness: brightness,
-                                     alpha: 100)
+                                     alpha: 10)
             
             // Draw a line from the last point to the next point
             canvas.drawLine(from: lastPoint, to: nextPoint)

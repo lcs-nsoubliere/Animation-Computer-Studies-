@@ -41,6 +41,19 @@ class FunctionArt6: NSObject, Sketchable {
                                            c: 0,
                                            canvas: canvas,
                                            type: .quadratic)
+            //All of the types of functions
+            //linear
+            //quadratic
+            //cubic
+            //squareRoot
+            //absoluteValue
+            //exponential
+            //reciprocal
+            
+            
+            
+            
+            
             
             // Add it to the list
             functions.append(newFunction)
@@ -73,7 +86,7 @@ class FunctionArt6: NSObject, Sketchable {
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
      
         //raondomly change the verticla position
-        let newC = Int.random(in: -150...150)
+      //  let newC = Int.random(in: -150...150)
         
         
         //draw the entire list of functions all at once
@@ -87,7 +100,7 @@ class FunctionArt6: NSObject, Sketchable {
                 //Gradually change the vertical stretch / compression
                 function.a = 0.25 * sin(Degrees(canvas.frameCount).asRadians() / 0.25)
                 
-                function.c = CGFloat(newC)
+                //function.c = CGFloat(newC)
                 function.update(on: canvas,
                                 usingInputValue: x)
            
@@ -108,3 +121,4 @@ class FunctionArt6: NSObject, Sketchable {
     }
     
 }
+
